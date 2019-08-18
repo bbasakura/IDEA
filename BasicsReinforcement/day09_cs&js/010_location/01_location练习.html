@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function () {
+            //点击btn1，获取当前浏览器地址栏的地址
+            document.getElementById("btn1").onclick = function () {
+                console.log(window.location.href);
+            };
+            //点击btn2，将地址栏的地址设置成：http://www.baidu.com
+            document.getElementById("btn2").onclick = function () {
+                location.href = "http://www.baidu.com";
+            };
+            //点击btn3，重新加载当前页面
+            document.getElementById("btn3").onclick = function () {
+                location.reload();
+            };
+        };
+    </script>
+</head>
+<body>
+<button id="btn1">点击btn1，获取当前浏览器地址栏的地址</button>
+<button id="btn2">点击btn2，将地址栏的地址设置成：http://www.baidu.com</button>
+<button id="btn3">点击btn3，重新加载当前页面</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--dubbox相关配置-->
+    <!-- 本工程并不需要发布服务到注册中心供其他服务，这里只需要扫面@reference注解，调用索引查询服务 -->
+    <!-- <dubbo:protocol name="dubbo" port="20883"></dubbo:protocol>-->
+    <dubbo:application name="cache-service"/>
+    <dubbo:registry protocol="zookeeper" address="node01:2181,node02:2181,node03:2181"/>
+    <!--修改好包扫描路径，扫面@reference注解-->
+    <dubbo:annotation package="com.itheima.cache"/>
+
+
+    <!--jedis创建-->
+    <bean name="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxTotal" value="50"></property>
+        <property name="maxIdle" value="25"></property>
+        <property name="minIdle" value="5"></property>
+    </bean>
+    <bean name="jedisPool" class="redis.clients.jedis.JedisPool">
+
+        <constructor-arg name="poolConfig" ref="poolConfig"></constructor-arg>
+        <constructor-arg name="host" value="192.168.72.142"></constructor-arg>
+        <constructor-arg name = "port" value="6379"></constructor-arg>
+    </bean>
+</beans>

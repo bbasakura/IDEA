@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        //onload事件
+        $(function () {
+            //选择 id为 one 的元素.
+            $("#btn1").click(function () {
+                //$("#one").css("border","1px solid red");
+                //{key:value,key:value,...} -- json
+                $("#one").css({"color":"red","border":"1px solid red"});
+            });
+            //选择 class 为 mini 的所有元素.
+            $("#btn2").click(function () {
+                // var jqueryArr = $(".mini");
+                // for (var i = 0; i < jqueryArr.length; i++) {
+                //     var element = jqueryArr[i];
+                //     element.setAttribute("style","color:red;border:1px solid red")
+                // }
+                $(".mini").css({"color":"red","border":"1px solid red"});
+            });
+            //选择 元素名是 div 的所有元素
+            $("#btn3").click(function () {
+                $("div").css({"color":"red","border":"1px solid red"});
+            });
+            //选择 所有的元素.
+            $("#btn4").click(function () {
+                //整个页面中所有的元素
+                var arr = $("*");
+                for (var i = 0; i < arr.length; i++) {
+                    var element = arr[i];
+                    console.log(element);
+                }
+                //console.log($("*").html())
+            });
+            //选择 所有的span元素和id为two的元素.
+            $("#btn5").click(function () {
+                $("#two,span").css({"color":"blue","border":"1px solid green"})
+            });
+        })
+    </script>
+</head>
+<body>
+<button id="reset">手动重置页面元素</button>
+<input type="checkbox" id="isreset" checked="checked"/><label for="isreset">点击下列按钮时先自动重置页面</label><br/><br/>
+<h3>基本选择器.</h3>
+
+<!-- 控制按钮 -->
+<input type="button" value="选择 id为 one 的元素." id="btn1"/>
+<input type="button" value="选择 class 为 mini 的所有元素." id="btn2"/>
+<input type="button" value="选择 元素名是 div 的所有元素." id="btn3"/>
+<input type="button" value="选择 所有的元素." id="btn4"/>
+<input type="button" value="选择 所有的span元素和id为two的元素." id="btn5"/>
+
+<br/><br/>
+
+<!-- 测试的元素 -->
+<div class="one" id="one">
+    id为one,class为one的div
+    <div class="mini">class为mini</div>
+</div>
+
+<div class="one" id="two" title="test">
+    id为two,class为one,title为test的div.
+    <div class="mini" title="other">class为mini,title为other</div>
+    <div class="mini" title="test">class为mini,title为test</div>
+</div>
+
+<div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+</div>
+
+<div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini" title="tesst">class为mini,title为tesst</div>
+</div>
+
+<div style="display:none;" class="none">style的display为"none"的div</div>
+
+<div class="hide">class为"hide"的div</div>
+
+<div>
+    包含input的type为"hidden"的div<input type="hidden" size="8"/>
+</div>
+
+<span id="mover">正在执行动画的span元素.</span>
+</body>
+</html>

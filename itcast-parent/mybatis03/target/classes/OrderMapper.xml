@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace(命名空间)：映射文件的唯一标识 -->
+<mapper namespace="com.itheima.mapper.OrderMapper">
+
+    <resultMap id="orderUserMap" type="Order" autoMapping="true">
+        <id column="id" property="id"/>
+        <association property="user" javaType="User" autoMapping="true">
+            <id column="user_id" property="id"/>
+        </association>
+    </resultMap>
+    <select id="queryOrderWithUser" resultMap="orderUserMap">
+    SELECT
+    *
+    FROM
+    tb_order a
+    LEFT JOIN tb_user b ON a.id = b.id
+    WHERE
+    a.order_number = #{number}
+    </select>
+
+    <!--一对多查询-->
+    <resultMap id="orderUserDetailsMap" type="Order" autoMapping="true" extends="orderUserMap">
+
+        <collection property="orderdetail" javaType="List" ofType="Orderdetail" autoMapping="true">
+            <id column="detail_id" property="id"/>
+        </collection>
+    </resultMap>
+    <select id="queryOrderWithUserDetail" resultMap="orderUserDetailsMap">
+        SELECT
+            *,ob.id detail_id
+        FROM
+            tb_order a
+        LEFT JOIN tb_user b ON a.id = b.id
+        LEFT JOIN tb_orderdetail ob ON a.id = ob.order_id
+        WHERE
+            a.order_number = #{number}
+    </select>
+
+
+    <resultMap id="orderUserDetailsItemMap" type="Order" autoMapping="true" extends="orderUserMap">
+
+        <collection property="orderdetail" javaType="List" ofType="Orderdetail" autoMapping="true">
+            <id column="detail_id" property="id"/>
+            <association property="item" javaType="Item" autoMapping="true">
+                <id column="item_id " property="id"/>
+            </association>
+        </collection>
+
+
+    </resultMap>
+
+    <select id="queryOrderWithUserDetailItem" resultMap="orderUserDetailsItemMap">
+       SELECT
+            *,ob.id detail_id
+        FROM
+            tb_order a
+        LEFT JOIN tb_user b ON a.id = b.id
+        LEFT JOIN tb_orderdetail ob ON a.id = ob.order_id
+        LEFT JOIN tb_item c on ob.item_id=c.id
+        WHERE
+            a.order_number = #{number}
+
+    </select>
+
+
+</mapper>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        /*
+         * 【案例】通过document对象获取页面标签
+         */
+
+        //页面加载完成
+        window.onload = function(){
+            //点击btn1，在控制台打印id为username的标签对象
+            document.getElementById("btn1").onclick = function () {
+                var usernameElement = document.getElementById("username");
+                console.log(usernameElement);
+            }
+            //点击btn2，在控制台打印name为hobby的标签对象
+            document.getElementById("btn2").onclick = function () {
+                var arrElement = document.getElementsByName("hobby");
+                for (var i = 0; i < arrElement.length; i++) {
+                    var element = arrElement[i];
+                    console.log(element);
+                }
+            }
+            //点击btn3，在控制台打印标签名为input的标签对象
+            document.getElementById("btn3").onclick = function () {
+                var arrElement = document.getElementsByTagName("input");
+                for (var i = 0; i < arrElement.length; i++) {
+                    var element = arrElement[i];
+                    console.log(element);
+                }
+            }
+            //点击btn4，在控制台打印class属性值为form-item的标签对象
+            document.getElementById("btn4").onclick = function () {
+                var arrElement = document.getElementsByClassName("form-item");
+                for (var i = 0; i < arrElement.length; i++) {
+                    var element = arrElement[i];
+                    console.log(element);
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+<h2>document对象获取页面标签</h2>
+<button id="btn1">点击btn1，在控制台打印id为username的标签对象</button>
+<button id="btn2">点击btn2，在控制台打印name为hobby的标签对象</button>
+<button id="btn3">点击btn3，在控制台打印标签名为input的标签对象</button>
+<button id="btn4">点击btn4，在控制台打印class属性值为form-item的标签对象</button>
+<hr />
+<form action="#" method="get" id="registForm">
+    用户名:<input  type="text" name="username" id="username" class="form-item"><br />
+    密码:<input type="password" name="password" id="password"  class="form-item"><br />
+    性别： <input type="radio" name="sex" value="男"> 男
+    <input type="radio" name="sex" value="女" />女<br />
+    爱好：<input type="checkbox" name="hobby" value="sj"/>睡觉
+    <input type="checkbox" name="hobby" value="bc"/>编程
+    <input type="checkbox" name="hobby" value="cj"/>吃鸡<br />
+    城市：<select name="city" id="city">
+    <option value="bj">北京</option>
+    <option value="sh">上海</option>
+    <option value="gz">广州</option>
+    <option value="sz">深圳</option>
+</select><br />
+    <input type="submit" value="注册" />
+</form>
+</body>
+</html>

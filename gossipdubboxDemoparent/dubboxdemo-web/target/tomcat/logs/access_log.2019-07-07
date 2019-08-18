@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [07/Jul/2019:19:18:26 +0800] "GET /user/getUserById.do?userId=%E6%A1%90%E8%9B%8B HTTP/1.1" 200 12 http-bio-8082-exec-2 3663
+0:0:0:0:0:0:0:1 - - [07/Jul/2019:19:18:26 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8082-exec-3 4

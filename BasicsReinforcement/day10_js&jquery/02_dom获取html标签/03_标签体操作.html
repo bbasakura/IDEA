@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("btn3").onclick = function () {
+                var a = document.getElementById("myDiv");
+                alert(a.innerText)
+            }
+            document.getElementById("btn4").onclick = function () {
+                document.getElementById("mySpan").innerText = "<font color='red'>聪明的人，都很低调</font>";
+            }
+            document.getElementById("btn5").onclick = function () {
+                var a = document.getElementById("mySpan").innerHTML;
+                alert(a);
+            }
+            document.getElementById("btn6").onclick = function () {
+                document.getElementById("myDiv").innerHTML = "<font color='red'>聪明的人，都很低调</font>";
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>dom操作标签的value和标签体</h2>
+<hr/>
+
+<h3>2、标签体操作</h3>
+<h4>2.1 、innerText</h4>
+<button id="btn3">点击btn3，使用alert弹出id="myDiv"的innerText</button>
+<button id="btn4">点击btn4，设置id="heimaSpan"的span的innerText值：&lt;font color="red"&gt;聪明的人，都很低调&lt;font&gt;</button>
+
+<h4>2.2 、innerHTML</h4>
+<button id="btn5">点击btn5，使用alert弹出id="myDiv"的innerHTML</button>
+<button id="btn6">点击btn6，设置id="heimaSpan"的span的innerHTML值：&lt;font color="red"&gt;聪明的人，都很低调&lt;font&gt;</button>
+
+
+<hr/>
+用户名：<input type="text"/>
+<div id="myDiv">传智<span id="mySpan">播客</span></div>
+</body>
+
+
+</html>

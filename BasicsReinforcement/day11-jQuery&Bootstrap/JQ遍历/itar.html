@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        //第一种遍历方式：jq对象方法遍历
+        //<input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值" id="b1" />
+        $(function () {
+
+          $("#b1").click(function () {
+              $("input[type='hidden']").each(function () {
+                  alert(this.value)
+              })
+          })
+            //第二种：jq全局函数遍历
+            $("#b2").click(function () {
+                var inp =$("input:hidden");
+                $.each(inp,function (index, element) {
+                    alert(index+element.value+"----"+this.value)
+                })
+            });
+
+          $("#b3").click(function() {
+                var arr=[2,19,38,"aaa","一号"];
+                $(arr).each(function (index,element) {
+                    alert(index+"     "+element)
+                })
+            });
+          $("#b1").hover(function () {
+              $(this).css("background-color","blue");
+          },function () {
+              $(this).css("background-color","gold")
+          });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值" id="b1"/>
+<input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值" id="b2"/>
+<input type="button" value=" 遍历数组" id="b3"/>
+<br/><br/>
+
+<!--文本隐藏域-->
+<input type="hidden" value="hidden_1">
+<input type="hidden" value="hidden_2">
+<input type="hidden" value="hidden_3">
+<input type="hidden" value="hidden_4">
+</body>
+</html>

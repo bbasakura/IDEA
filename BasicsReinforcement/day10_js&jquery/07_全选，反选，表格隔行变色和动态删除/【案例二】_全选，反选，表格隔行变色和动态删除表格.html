@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>全选，反选</title>
+    <script>
+        window.onload = function () {
+            <!--
+    - 完成全选与取消全选功能；
+    - 完成反选功能；
+    - 完成表格隔行变色；
+    - 完成动态删除表格
+-->
+            document.getElementById("checkAll").onclick=function () {
+                var arr = document.getElementsByClassName("myCheckBox");
+                for (var i = 0; i < arr.length; i++) {
+                    var a  = array[i];
+                    arr[i].checked= this.checked;
+
+                }
+            }
+        }
+        window.open("day10_js&jquery/01_dom概述/01_document对象.html")
+    </script>
+</head>
+<body>
+<h2>全选，反选，表格隔行变色，删除表格</h2>
+<hr/>
+<table border="1px" width="600px" cellspacing="0px" style="margin-left: 26%;margin-top: 3%;">
+    <tr>
+        <td colspan="5">
+            <button id="mybutton">反选</button>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="checkAll"/></td>
+        <th>分类ID</th>
+        <th>分类名</th>
+        <th>描述</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="myCheckBox"/></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>手机</td>
+        <td><a href="#" onclick="delTr(this);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="myCheckBox"/></td>
+        <td>2</td>
+        <td>电脑办公</td>
+        <td>电脑</td>
+        <td><a href="#" onclick="delTr(this);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="myCheckBox"/></td>
+        <td>3</td>
+        <td>鞋靴箱包</td>
+        <td>鞋靴</td>
+        <td><a href="#" onclick="delTr(this);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="myCheckBox"/></td>
+        <td>4</td>
+        <td>家居饰品</td>
+        <td>家具</td>
+        <td><a href="#" onclick="delTr(this);">删除</a></td>
+    </tr>
+</table>
+</body>
+
+<script type="text/javascript">
+
+
+</script>
+</html>

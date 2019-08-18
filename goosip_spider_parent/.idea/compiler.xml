@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="goosip_spider_redis" />
+        <module name="gossip_search_kafka" />
+        <module name="gossip_search_lucene" />
+        <module name="gossip_search_solr" />
+        <module name="gossip_search_solrcloud" />
+        <module name="gossip_spider_base" />
+        <module name="gossip_spider_deploy" />
+        <module name="gossip_spider_kafka" />
+        <module name="gossip_spider_news" />
+        <module name="storm_wordcount" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="goosip_spider_parent" target="1.5" />
+      <module name="goosip_spider_redis" target="1.5" />
+      <module name="gossip_search_kafka" target="1.5" />
+      <module name="gossip_search_lucene" target="1.5" />
+      <module name="gossip_search_solr" target="1.5" />
+      <module name="gossip_search_solrcloud" target="1.5" />
+      <module name="gossip_spider_base" target="1.5" />
+      <module name="gossip_spider_deploy" target="1.8" />
+      <module name="gossip_spider_kafka" target="1.5" />
+      <module name="gossip_spider_news" target="1.8" />
+      <module name="springjms_kafka_producer" target="1.5" />
+      <module name="storm_wordcount" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

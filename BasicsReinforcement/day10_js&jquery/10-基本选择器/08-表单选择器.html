@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                var arr = $(":input");
+                for (var i = 0; i < arr.length; i++) {
+                    var element = arr[i];
+                    console.log(element)
+                }
+            });
+            //选取表单中文本输入框
+            $("#btn2").click(function () {
+                $("input:text").css({"color":"red","border":"5px solid blue"})
+            });
+        });
+    </script>
+</head>
+
+<body>
+<input type="button" value="选取所有的表单子元素" id="btn1" /><br />
+<input type="button" value="选取表单中文本输入框" id="btn2" /><br />
+
+<form id="form1" action="#">
+    <input type="button" value="Button" /><br/>
+    <input type="checkbox" name="c" />1
+    <input type="checkbox" name="c" />2
+    <input type="checkbox" name="c" />3<br/>
+    <input type="file" /><br/>
+    <input type="hidden" /><br/>
+    <input type="image" src="../img/1.png" /><br/>
+    <input type="password" /><br/>
+    <input type="radio" name="a" />1
+    <input type="radio" name="a" />2<br/>
+    <input type="reset" /><br/>
+    <input type="submit" value="提交" /><br/>
+    <input type="text" /><br/>
+    <select>
+        <option>Option</option>
+    </select><br/>
+    <textarea rows="5" cols="20"></textarea><br/>
+    <button>Button</button><br/>
+</form>
+
+<div></div>
+</body>
+
+</html>

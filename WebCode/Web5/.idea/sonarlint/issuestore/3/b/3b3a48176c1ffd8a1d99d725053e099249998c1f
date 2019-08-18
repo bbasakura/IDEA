@@ -1,0 +1,10 @@
+
+Qsquid:S1989"3Add a "try/catch" block for "setCharacterEncoding".(ï‡‹ê8úÎû³-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ø¡†‚³-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(‹¨¯¿8¶ÍÍ•²-
+Hsquid:S1989+"%Add a "try/catch" block for "doPost".(ã÷éíùÿÿÿÿ8ÁÄÎ•²-
+Isquid:S1989&"+Add a "try/catch" block for "sendRedirect".(¿ŸŒ8«üŒ‚³-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ø¡†‚³-
+Hsquid:S1989+"%Add a "try/catch" block for "doPost".(ã÷éíùÿÿÿÿ8ÁÄÎ•²-
+{squid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(‰å¹«ùÿÿÿÿ8ÁÄÎ•²-
+]squid:S1161*":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ8¶ÍÍ•²-

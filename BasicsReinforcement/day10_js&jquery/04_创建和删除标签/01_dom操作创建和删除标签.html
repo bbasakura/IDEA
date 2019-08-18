@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function () {
+            //单击btn1，创建一个input标签
+            //createElement(标签名)
+            document.getElementById("btn1").onclick = function () {
+                var input = document.createElement("input");
+                console.log(input);
+            }
+            //单击btn2，删除id="mySpan
+            document.getElementById("btn2").onclick = function () {
+                var mySpan = document.getElementById("myDiv");
+                mySpan.remove();
+                //remove 删除全部 包括自己
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>dom对象创建和删除标签</h2>
+<hr/>
+<!--
+    操作按钮
+-->
+<h3>操作按钮</h3>
+<button id="btn1">单击btn1，创建一个input标签</button>
+<button id="btn2">单击btn2，删除id="mySpan"的标签</button>
+
+<div id="myDiv">
+    传智<span id="mySpan">播客</span>
+</div>
+</body>
+</html>

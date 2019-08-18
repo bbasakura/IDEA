@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        //页面加载完成后执行
+        window.onload = function () {
+            //点击btn1，使用alert弹出input标签的value值
+
+            document.getElementById("btn1").onclick = function () {
+                // var va = document.getElementsByTagName('input');
+                var va = document.getElementById("username");
+                alert(va.value)
+            }
+            //点击btn2，给input标签的value值设置为："黑马程序员"
+            document.getElementById("btn2").onclick = function () {
+                var va = document.getElementById("username");
+                va.value = "黑马";
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>dom操作标签的value和标签体</h2>
+<hr/>
+
+<!--
+    操作按钮：
+-->
+<h2>操作按钮</h2>
+<h3>1、value值操作</h3>
+<button id="btn1">点击btn1，使用alert弹出input标签的value值</button>
+<button id="btn2">点击btn2，给input标签的value值设置为："黑马程序员"</button>
+<hr/>
+用户名：<input type="text" id="username"/>
+</body>
+</html>

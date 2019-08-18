@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function() {
+				//当件数发生变化的时候  获取总价
+				//为商品件数添加一个onchange事件
+				var numElement = document.getElementById("num");
+                numElement.onchange = function () {
+					//当内容发生变化的时候获取 商品单价 件数
+					//单价
+					var proPrice = document.getElementById("proPrice").value;
+                    var num = numElement.value;
+                    var totalPrice = proPrice * num;
+                    //计算总件 再将总价赋值给 商品总价所在元素
+					document.getElementById("totalPrice").value = totalPrice;
+                };
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<form action="" method="get">
+			商品单价:<input value="10" id="proPrice" />
+			*商品件数：<input type="text" id="num"/>
+			=商品总价：<input type="text" id="totalPrice" /><br />
+			<input type="submit" value="提交订单" />
+		</form>
+	</body>
+
+</html>

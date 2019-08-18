@@ -1,0 +1,15 @@
+
+Gsquid:S19892"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿ8ìØáÀ°-
+nsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(¤í Ìüÿÿÿÿ8¬–ÜÀ°-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(óú®øüÿÿÿÿ8¬–ÜÀ°-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(›®Äûÿÿÿÿ8¬–ÜÀ°-
+Gsquid:S19892"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿ8ìØáÀ°-
+V
+squid:S106:"9Replace this use of System.out or System.err by a logger.(Ï¸üğ8ÚØâÀ°-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¬–ÜÀ°-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ßÁÂ¾8¬–ÜÀ°-
+isquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(™ùİ€8¬–ÜÀ°-
+nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¬–ÜÀ°-
+lsquid:UselessImportCheck"<Remove this unused import 'com.itheima.Utils.JdbcTempUtils'.(ÒÜ¢øÿÿÿÿ8Ù”¤Á°-
+wsquid:UselessImportCheck"GRemove this unused import 'org.springframework.jdbc.core.JdbcTemplate'.(å ê‹ÿÿÿÿÿ8Ù”¤Á°-
+asquid:UselessImportCheck"7Remove this unused import 'javafx.scene.control.Alert'.(ÊÇê:8‚Ô’ç°-

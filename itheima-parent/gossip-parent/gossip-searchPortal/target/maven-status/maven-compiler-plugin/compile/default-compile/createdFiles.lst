@@ -1,0 +1,5 @@
+com\itheima\mapper\NewsMapper.class
+com\itheima\controller\NewsController.class
+com\itheima\service\NewsServiceImpl.class
+com\itheima\timing\IndexWriterTiming.class
+com\itheima\service\NewsService.class

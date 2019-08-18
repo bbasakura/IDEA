@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload = function () {
+			    //onsubmit 当表单提交的触发的事件
+				//这个事件使用在form 元素上
+				var formElement = document.getElementById("registFrom");
+                formElement.onsubmit = function () {
+                    /////////这个方法返回一个布尔值，为ture,表单可以提交，
+					/////////返回了false，事件被拦截，提交失败。
+					/**/
+                    //事件拦截 不提交
+					//return false;
+					//可以正常提交数据
+					//return true;
+					//当数据进行提交的时候 触发 onsubmit 事件
+					//获取用户名以及密码
+					var username = document.getElementById("uName").value;
+					var password = document.getElementById("pwd").value;
+					//判断用户名与密码是否为空
+					if(username && password){
+					    return true;
+					}else{
+					    alert("账号或密码为空!")
+						return false;
+					}
+					//return username && password;这样不行
+					//为空  做一个提示  return false;
+					//不为空 return true;
+                }
+            }
+		</script>
+	</head>
+	<body>
+		<form action="#" id="registFrom">
+			用户名：<input type="text"  name="username" id="uName"/><br />
+			密码：<input type="password" name="pwd" id="pwd"/><br />
+			<input type="submit" value="注册" />
+		</form>
+	</body>
+	
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+				div{
+					border: 1px solid #362b40;
+				}
+				#outerDiv{
+					height: 500px;
+					width: 500px;
+				}
+			#innerDiv{
+				width: 200px;
+				height: 200px;
+			}
+			body{
+				background-image: url("../img/1.jpg");
+			}
+		</style>
+	</head>
+	<!--
+	margin:
+	设置一个值 上右下左四个方向的边距 优先满足上左
+	设置两个值 上下	左右 优先满足上左
+	设置四个值 上右下左 四个方向
+	-->
+	<body>
+		<div id="outerDiv">
+			<div id="innerDiv" style="padding: 10px;margin: 10px 0 0 50px">
+				中
+			</div>
+		</div>
+	</body>
+</html>

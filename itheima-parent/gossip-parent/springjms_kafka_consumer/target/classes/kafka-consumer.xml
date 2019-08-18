@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--包扫描-->	<!-- 包扫描 -->
+    <context:component-scan base-package="com.itheima.kafka.consumer"/>
+    <!--加载属性配置文件-->
+    <context:property-placeholder location="classpath:init.properties" />
+    <!-- 定义consumer的参数 -->
+    <!--加载配置信息-->
+    <bean id="consumerProperties" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="bootstrap.servers" value="${kafka.servers}"/>
+                <!--消费者组id-->
+                <entry key="group.id" value="spider-test"/>
+                <entry key="enable.auto.commit" value="true"/>
+                <entry key="auto.commit.interval.ms" value="1000"/>
+                <entry key="session.timeout.ms" value="15000"/>
+                <entry key="key.deserializer" value="org.apache.kafka.common.serialization.IntegerDeserializer"/>
+                <entry key="value.deserializer" value="org.apache.kafka.common.serialization.StringDeserializer"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <!-- 创建consumerFactory bean -->
+    <bean id="consumerFactory" class="org.springframework.kafka.core.DefaultKafkaConsumerFactory">
+        <constructor-arg>
+            <ref bean="consumerProperties"/>
+        </constructor-arg>
+    </bean>
+
+
+    <!--需要开发:消费者的监听类,必须实现一个接口-->
+    <bean id="containerProperties" class="org.springframework.kafka.listener.config.ContainerProperties">
+        <!--消费的topic-->
+        <constructor-arg value="${kafka.topic}"/>
+        <!-- 真正执行消费数据逻辑的消息监听者 -->
+        <property name="messageListener" ref="spiderKafkaConsumer"/>
+    </bean>
+
+
+    <!--消费者的监听你容器: 随着spring的启动而启动,spring不停,消费者不停-->
+    <bean class="org.springframework.kafka.listener.KafkaMessageListenerContainer">
+        <constructor-arg name="consumerFactory" ref="consumerFactory"></constructor-arg>
+        <constructor-arg name="containerProperties" ref="containerProperties"></constructor-arg>
+    </bean>
+</beans>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //3次之后取消定时效果
+            var count = 0;
+            var inte = setInterval(function () {
+             //1秒显示
+                $("#ad").slideDown(1000);
+                //广告显示两秒
+                //2秒之后再执行隐藏功能
+                setTimeout(function () {
+                    //1秒隐藏
+                    $("#ad").slideUp(1000);
+                },2000)
+                count++;
+                if(count > 2){
+                    clearInterval(inte);
+                }
+            },4000);
+        });
+    </script>
+</head>
+<body>
+<!-- 【需求】：
+1. 页面加载完成后，每隔4秒周期性地弹出广告；
+2. 广告弹出2秒后隐藏；
+3. 共弹出3次；
+ -->
+<div align="right">
+    <img src="../img/guanggao.png" id="ad" style="display: none">
+</div>
+</body>
+</html>

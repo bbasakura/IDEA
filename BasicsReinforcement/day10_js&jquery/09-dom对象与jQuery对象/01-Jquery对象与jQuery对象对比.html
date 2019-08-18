@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<!--
+      jquery对象与dom对象的对比
+      jquery对象与dom对象的转换
+      jQuery对象方法与dom对象的方法
+ -->
+    <span id="mySpan">传智播客</span>
+<script>
+    //dom对象获取元素
+    var mySpan = document.getElementById("mySpan");
+    console.log(mySpan);
+    //jQuery获取对象
+    var jQuerySpan = jQuery("#mySpan");
+    console.log(jQuerySpan);
+
+    // jquery对象与dom对象的转换
+    //dom->jQuery 只要被 jQuery 碰到的东西都是jQuery对象
+    console.log(jQuery(mySpan));
+    //jQuery --> dom
+    console.log(jQuerySpan[0]);
+    console.log(jQuerySpan.get(0));
+    //jQuery对象方法与dom对象的方法
+    //dom对象
+    //mySpan.innerText = "你好";
+    jQuerySpan.text("你好");
+</script>
+</body>
+</html>

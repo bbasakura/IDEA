@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatiesCRUDMapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspirng_02_proxy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_02_cglib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_02_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_03Aop_annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_03Aop_xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_04_Jdbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_04_transaction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspring_04_transaction_anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspringmvc_01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myspringmvc_02" charset="UTF-8" />
+  </component>
+</project>

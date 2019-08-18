@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <style type="text/css">
+        div {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //show
+            /*
+            * show() 没有动画效果 直接显示
+            * show(毫秒值) 根据时间慢慢显示出来
+            * show(毫秒值,function(){
+            * 动画执行结束后调用的函数
+            * })
+            *
+            * */
+            $("#b1").click(function () {
+                // $("#b1Div").hide(2000,function () {
+                //     alert("动画执行完毕!");
+                // });
+                //$("#b1Div").hide(2000);
+                //$("#b1Div").show(2000);
+                //隐藏的时候显示  显示的时候隐藏
+                $("#b1Div").toggle(2000);
+            });
+            /*
+
+            slideDown([s],[e],[fn]) 滑入
+            slideUp([s,[e],[fn]]) 滑出
+            slideToggle([s],[e],[fn]) 切换
+
+             */
+            $("#b2").click(function () {
+               // $("#b2Div").slideUp(2000);
+                //$("#b2Div").slideDown(2000);
+                //切换
+                $("#b2Div").slideToggle(2000);
+            });
+            /*
+
+            fadeIn([s],[e],[fn]) 淡入
+            fadeOut([s],[e],[fn]) 淡出
+            fadeToggle([s,[e],[fn]]) 切换
+
+             */
+            $("#b3").click(function () {
+                // $("#b3Div").fadeOut(2000);
+                // $("#b3Div").fadeIn(2000);
+                $("#b3Div").fadeToggle(2000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+<input type="button" id="b1" value="显示/隐藏 b1Div" />
+<div id="b1Div"></div> <br/>
+<input type="button" id="b2" value="滑出/滑入b2Div" />
+<div id="b2Div"></div> <br/>
+<input type="button" id="b3" value="淡出/淡入b3Div" />
+<div id="b3Div">
+    <img src="../img/guanggao.png" alt="">
+</div>
+
+</body>
+</html>

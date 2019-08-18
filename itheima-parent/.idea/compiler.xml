@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myspringmvc_01" />
+        <module name="ssm_intergrate" />
+        <module name="test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ggg" target="1.7" />
+      <module name="itheima-parent" target="1.7" />
+      <module name="myspringmvc_01" target="1.7" />
+      <module name="ssm_integrate" target="1.7" />
+      <module name="ssm_intergrate" target="1.7" />
+      <module name="test" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

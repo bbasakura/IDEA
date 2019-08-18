@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.3 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day03Xml&amp;工具类/lib/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day03Xml&amp;工具类/lib/commons-logging-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

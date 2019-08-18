@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!--solr集群的配置-->
+    <bean class="org.apache.solr.client.solrj.impl.CloudSolrServer">
+        <!--指定zookeeper的连接地址-->
+        <constructor-arg name="zkHost"
+                         value="node01:2181,node02:2181,node03:2181"></constructor-arg>
+        <!--默认的索引库-->
+        <property name="defaultCollection" value="collection2"></property>
+        <!--从zookeeper中获取的客户端的超时时间, -->
+        <property name="zkClientTimeout" value="5000"></property>
+        <!--设置 连接 zookeeper的超时时间-->
+        <property name="zkConnectTimeout" value="5000"></property>
+    </bean>
+
+    <!--注册到注册中心的项目名称(把什么服务注册到中心，名字是什么，注册中心的地址在哪里)-->
+    <dubbo:application name="search-service"/>
+    <!--注册中心的地址-->
+    <dubbo:registry protocol="zookeeper" address="node01:2181,node02:2181,node03:2181"/>
+
+    <dubbo:protocol port="20881" ></dubbo:protocol>
+
+    <!--注意：包扫描，识别dubbo:annotation用于扫描@Service @Reference注解。-->
+    <dubbo:annotation package="com.itheima.service" />
+
+</beans>

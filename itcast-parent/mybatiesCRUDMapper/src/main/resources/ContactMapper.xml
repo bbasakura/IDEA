@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace(命名空间)：映射文件的唯一标识 -->
+<mapper namespace="com.itheima.ContactMapper">
+
+    <!-- 查询的statement，id：在同一个命名空间下的唯一标识，resultType：sql语句的结果集封装类型 -->
+    <select id="queryContactById" resultType="com.itheima.ContactInfo" >
+        select * from contact_info where id=#{id}
+    </select>
+
+    <!--查询所有的通讯录-->
+    <select id="queryContactAll" resultType="com.itheima.ContactInfo">
+        SELECT
+        *
+        FROM
+        mydb1.contact_info
+    </select>
+
+    <!--插入通讯录-->
+    <insert id="insertContact" parameterType="com.itheima.ContactInfo">
+        INSERT INTO mydb1.contact_info (
+            name,
+            gender, 
+            birthday,
+            birthplace,
+            mobile,
+            email
+        )
+        VALUES
+            (
+            #{name},
+            #{gender},
+            #{birthday},
+            #{birthplace},
+            #{mobile},
+            #{email}
+            );
+    </insert>
+    <update id="updateContact" parameterType="com.itheima.ContactInfo">
+       UPDATE mydb1.contact_info
+
+        SET 
+         name= #{name},
+         gender=#{gender},
+         birthday=#{birthday},
+         birthplace=#{birthplace},
+         mobile=#{mobile},
+         email=#{email}
+        WHERE
+            (id= #{id});
+    </update>
+
+    <!--根据id删除通讯录-->
+    <delete id="deleteContactById" parameterType="java.lang.Integer">
+
+        delete from contact_info where id=#{id}
+    </delete>
+</mapper>

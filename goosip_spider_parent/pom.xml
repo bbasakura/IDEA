@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itheima.yltt</groupId>
+    <artifactId>goosip_spider_parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>goosip_spider_redis</module>
+        <module>gossip_spider_base</module>
+        <module>gossip_spider_news</module>
+        <module>gossip_search_solr</module>
+        <module>gossip_search_lucene</module>
+        <module>gossip_search_solrcloud</module>
+        <module>gossip_search_kafka</module>
+        <module>gossip_spider_kafka</module>
+        <module>storm_wordcount</module>
+    </modules>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

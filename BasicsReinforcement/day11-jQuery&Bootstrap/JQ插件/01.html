@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+
+    <!--	使用jQuery的validate插件实现一个简单的表单验证：
+            1. 用户名不能为空；
+            2. 密码是4-6位；
+-->
+    //很多问题来自打字错误，或者括号错误？？？？
+    <script>
+        $(function () {
+            $("#form1").validate({
+                rules: {
+                    username: {
+                        required: true
+                    },
+                    password: {
+                        required: true,
+                        minlenght: 4,
+                        maxlenght: 6
+                    }
+                },
+                message: {
+                    username: {
+                        required: "请输入正确的用户名"
+                    },
+                    password: {
+                        required: "密码不能为空",
+                        minlenght: "最少有四位",
+                        maxlenght: "最多有六位"
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<form id="form1" action="#" method="get">
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" name="username" id="username"/></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" name="password" id="password"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="提交"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

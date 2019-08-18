@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./img/style.css">
+    <link rel="stylesheet" href="./img/swiper.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./css/demo.css">
+</head>
+<body>
+<!-- 顶部搜索	 - start -->
+<div class="header">
+    <div class="head">
+        <div class="logo"><a href="#"><img src="./img/logo.png" width="100%" alt=""></a></div>
+        <form action="/list.html" class="formBox">
+            <input type="text" class="inputSeach" id="inputSeach" name="keywords">
+            <input type="submit" value="搜索一下" class="inputSub">
+            <div class="recommend">
+                <div class="item">美团</div>
+                <div class="item">百度外卖</div>
+                <div class="item">美团</div>
+                <div class="item">百度外卖</div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 顶部搜索	 - end -->
+
+<div class="contentBox">
+    <!-- 中间左边区域 - start -->
+    <div class="contener_l">
+        <div class="count">
+            <div class="showTool">
+                <div class="toolBox">搜索引擎为您找到相关结果约个
+                    <span class="tool">搜索工具</span>
+                </div>
+                <div class="toolBox">
+
+                    从:<input class="easyui-datetimebox" style="height: 25px ; width: 100px" name="startDate"/>
+                    至:<input class="easyui-datetimebox" style="height: 25px ; width: 100px" name="endDate"/>
+                    <input type="button" onclick="ajaxQuery(1,15)" value="确定">
+
+                    <input name="editor" placeholder="请输入编辑" onkeypress="ajaxQuery(1,15)"
+                           style="height: 15px ; width: 100px"/>
+                    <input name="source" placeholder="请输入来源" onkeypress="ajaxQuery(1,15)"
+                           style="height: 15px ; width: 100px"/>
+                    <span class="tool openTool">收起工具</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="advItem">
+            <div class="item">
+                <div class="title"><img src="./img/logo.png" width="30px" height="30px" class="logo" alt=""><a
+                        href="#"></a>北京传智播客教育科技股份有限公司 <span>官网</span></div>
+                <div class="contentInfo_src">
+                    <a href="#"><img src="./img/item.jpeg" alt="" class="imgSrc" width="121px" height="75px"></a>
+                    <div class="infoBox">
+                        <p class="describe">
+                            大数据学习已然成为时代所趋，相较于目前市面上的书籍及学习视频，大数据培训更适用于对大数据感兴趣的人群，通过培训老师丰富的大数据实战经验分享，
+                            能在大数据初期学习中，少走很多弯路，后期的项目实战，结合企业及时下大数据热门应用，可快速接轨大数据发展方向。
+                        </p>
+                        <p><a class="showurl" href="www.itcast.cn">www.itcast.cn 2018-08</a> <span class="lab"><a
+                                href="">传智快照 - </a><a href="">品牌广告</a></span></p>
+                    </div>
+                </div>
+                <div class="advTable">
+                    <div class="lab">
+                        <div class="on">传智播客</div>
+                        <div>传智播客</div>
+                        <div>传智播客</div>
+                        <div>传智播客</div>
+                        <div>传智播客</div>
+                        <div>传智播客</div>
+                    </div>
+                    <div class="cont">
+                        <div class="items">
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京传智播客教育科技股份有限公司一</div>
+                                <ul>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京传智播客教育科技股份有限公司二</div>
+                                <ul>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京传智播客教育科技股份有限公司三</div>
+                                <ul>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京传智播客教育科技股份有限公司四</div>
+                                <ul>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京传智播客教育科技股份有限公司五</div>
+                                <ul>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <img src="./img/item.jpeg" alt="">
+                            <div class="itemsInfo">
+                                <div class="tit">北京传智播客教育科技股份有限公司六</div>
+                                <ul>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                    <li><a href="#">传智播客</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="listTit">
+                                <a href="">
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                    <div>传智播客</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新闻列表展示-->
+        <div class="itemList">
+
+        </div>
+
+        <div class="relevant">
+            <div class="title">
+                相关搜索
+            </div>
+            <div>
+                <a href="#">仪表传智播客器</a>
+                <a href="#">传智播客</a>
+                <a href="#">asp是什么语言</a>
+                <a href="#">上海雷迅am2-40价格</a>
+                <a href="#">上海雷迅销售电话</a>
+                <a href="#">上海雷迅传智播客ak-mg</a>
+                <a href="#">aspl</a>
+                <a href="#">pdm箱</a>
+                <a href="#">pdm配电单元</a>
+            </div>
+        </div>
+
+        <div class="pageList">
+            <ul>
+                <li><a href="#">< 上一页</a></li>
+                <li>1</li>
+                <li>2</li>
+                <li class="on">3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>下一页 ></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 中间左边区域 - end -->
+
+    <!-- 中间右边区域 - start -->
+
+    <div class="contener_r">
+        <div class="advert">
+            <div class="title">国科简提供区块链系统</div>
+            <div class="ban_swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/adv1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/adv2.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/adv1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/adv2.jpeg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="des">
+                星域云 开创了全球领先的共享计算生态,以共享模式和区块链技术收集海量计算资源,将百万节点资源整合,开放给广大互联网企业,实现更高性价比,更易扩展,更环保的计算方式.
+            </div>
+            <div class="showUrl"><a href="#">国科简（北京）科技有限公司</a> <span>品牌广告</span></div>
+        </div>
+
+        <div class="hotSeach">
+            <div class="title">搜索热点
+                <div class="pageListes">
+                    <a href=""> < </a>
+                    <a href="" class="on"> <span></span></a>
+                    <a href=""> <span></span></a>
+                    <a href=""> <span></span></a>
+                    <a href="" class="go"> ></a></div>
+            </div>
+            <div class="seachItem">
+                <div class="topLab">排名 <span>搜索指数</span></div>
+                <li class="A"><a href=""><span>1</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li class="B"><a href=""><span>2</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li class="C"><a href=""><span>3</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>4</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>5</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>6</span>新闻联播 下等人 <span>1345<em class="add"></em></span></a></li>
+                <li><a href=""><span>7</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>8</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <li><a href=""><span>9</span>新闻联播 下等人 <span>1345<em class="add"></em></span></a></li>
+                <li><a href=""><span>10</span>新闻联播 下等人 <span>1345<em></em></span></a></li>
+                <div class="source"> 数据来源 百度数据库</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间右边区域 - end -->
+
+</div>
+<script src="./img/swiper.min.js"></script>
+<script src="./img/jquery.min.js"></script>
+<script src="./img/jquery.easyui.min.js"></script>
+<script>
+
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        autoplay: true
+    });
+    var swiper = new Swiper('.swiper-hot-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        autoplay: true
+    });
+
+    $('.tool').click(function () {
+        if ($('.showTool').hasClass('act')) {
+            $('.showTool').removeClass('act')
+        } else {
+            $('.showTool').addClass('act')
+        }
+    })
+
+    $('.inputSeach').focus(function () {
+        $('.recommend').css({display: 'block'})
+    })
+    $('.inputSeach').blur(function () {
+        setTimeout(function () {
+            $('.recommend').css({display: 'none'})
+        }, 100)
+    })
+    $('.recommend .item').click(function () {
+        $('.inputSeach').val($(this).text())
+        $('.recommend').css({display: 'none'})
+    })
+
+    var tabInd = 0;
+    var time = ''
+
+    $('.advTable .lab div').hover(function () {
+        clearInterval(time)
+        tabInd = $(this).index();
+        tabSwitch(tabInd)
+    }, function () {
+        time = setInterval(automaticSwitch, 3000)
+    })
+
+    function tabSwitch(obj) {
+        $('.advTable .lab div').eq(obj).addClass('on').siblings().removeClass('on')
+        tabInd = obj
+        $('.advTable .cont .items').eq(tabInd).show().siblings().hide()
+    }
+
+    function automaticSwitch() {
+        tabInd++
+        if (tabInd >= $('.advTable .lab div').length) {
+            tabInd = 0;
+        }
+        tabSwitch(tabInd)
+    }
+
+    time = setInterval(automaticSwitch, 3000)
+
+
+</script>
+
+
+</body>
+<script type="text/javascript">
+    //页面初始化就执行的操作
+    //1.获取url中的请求参数
+    var url = window.location.search;
+
+    var keywords = url.split("=")[1];
+
+    //url的解码
+    keywords = decodeURI(keywords);
+
+    //关键字的回显
+    $("#inputSeach").val(keywords);
+
+
+    ajaxQuery(1, 15);
+
+    //发送ajax请求的方法
+    function ajaxQuery(page, pageSize) {
+        //获取页面的过滤条件
+        var startDate = $("[name=startDate]").val();
+        var endDate = $("[name=endDate]").val();
+        var editor = $("[name=editor]").val();
+        var source = $("[name=source]").val();
+
+        //2.发送ajax请求(请求参数就是keywords), 访问controller中的方法,返回新闻列表 $.post(url, data, func, dataType);
+        var params = {
+            "keywords": keywords,
+            "startDate": startDate,
+            "endDate": endDate,
+            "source": source,
+            "editor": editor,
+            "pageBean.page": page,
+            "pageBean.pageSize": pageSize
+        };
+        var url = "/ps.action";
+        $.get(url, params, function (data) {
+
+
+            // var num = (page * pageSize);要显示的总结果的条数，怎么计算显示？
+
+            //没有数据跳转到首页
+            if (data == null || data == "") {
+                window.location.href = "/index.html";
+                return;
+            }
+
+            //清空class=itemList的div
+            $(".itemList").html("");
+
+            //3.异步加载新闻数据到list.html页面去展示
+            //遍历集合数据
+            $(data.newsList).each(function () {
+
+                //向class=itemList 的div追加 新闻数据
+
+                //处理url
+                var url = this.url;
+                var docurlStr = url;
+                if (url.length > 30) {
+                    docurlStr = docurlStr.substring(0, 29) + "...";
+                }
+
+                //构造一条新闻的html片段
+                var html = "<div class=\"item\">\n" +
+                    "    <div class=\"title\"><a href='" + url + "'>" + this.title + "</a></div>\n" +
+                    "    <div class=\"contentInfo_src\">\n" +
+                    "        <a href=\"#\"><img src=\"./img/item.jpeg\" alt=\"\" class=\"imgSrc\" width=\"121px\" height=\"75px\"></a>\n" +
+                    "        <div class=\"infoBox\">\n" +
+                    "            <p class=\"describe\">\n" + this.time + " - " + this.content +
+                    "            </p>" +
+                    "            <p><a class=\"showurl\" href='" + url + "'>" + docurlStr + " </a> <span class='lab'><a" +
+                    "                    href=\"\">" + this.source + "  " + this.editor + " - </a></span></p>\n" +
+                    "        </div>" +
+                    "    </div>" +
+                    "</div>";
+
+
+                //追加到div(class=itemList)
+                $(".itemList").append(html);
+
+
+                //数据较少的时候，页数也少，先清空分页栏,再进行追加分页栏
+                $(".pageList").html(pageStr);
+                //需要处理分页工具条
+                var pageStr = "<ul>";
+                // 1.1 上一页 :
+                //<li><a href="#">< 上一页</a></li>
+                if (data.page > 1) {//当前页大于1，才显示上一页
+                    //如何禁用掉某一个元素的属性呢? js:javascript:void(0)
+                    pageStr += "<li><a href='javascript:void(0)' onclick='ajaxQuery(" + (data.page - 1) + ",15)'>< 上一页</a></li>";
+                }
+
+                //1.2 分页码数: 展示七个条码     前三 后三              4 5 6    7   8 9 10
+                //如果总页数就7个:展示全部页码
+                if (data.pageNumber <= 7) {
+                    //直接展示所有的页数
+                    for (var i = 1; i <= data.pageNumber; i++) {
+                        if (data.page == i) {
+                            pageStr += "<li class='on'>" + i + "</li>";
+                        } else {
+                            pageStr += "<li><a href='javascript:void(0)' onclick='ajaxQuery(" + i + ",15)' >" + i + "</a></li>"
+                        }
+                    }
+
+                } else {
+                    //总页数大于7
+                    // 如果用户: 当前页 <= 4 ,显示前7页数据，起始页=1，结束页=7
+                    if (data.page <= 4) {
+                        for (var i = 1; i <= 7; i++) {
+                            if (data.page == i) {
+                                pageStr += "<li class='on'>" + i + "</li>";
+                            } else {
+                                pageStr += "<li><a href='javascript:void(0)' onclick='ajaxQuery(" + i + ",15)' >" + i + "</a></li>"
+                            }
+                        }
+                    } else if (data.page > (data.pageNumber - 3)) {              //95 96 97   98(当前页)  99   100   101
+                        //如果当前页  >   ( 总页数 - 3 ), 显示最后7页数据就行，起始页=总页数-6，  结束页=总页数
+                        for (var i = data.pageNumber - 6; i <= data.pageNumber; i++) {
+                            if (data.page == i) {
+                                pageStr += "<li class='on'>" + i + "</li>";
+                            } else {
+                                pageStr += "<li><a href='javascript:void(0)' onclick='ajaxQuery(" + i + ",15)' >" + i + "</a></li>"
+                            }
+                        }
+
+
+                    } else {
+                        //正常情况，起始页：当前页+3         结束页：当前页-3                              5 6 7   8(当前页)  9 10 11
+                        for (var i = data.page - 3; i <= data.page + 3; i++) {
+
+                            if (data.page == i) {
+                                pageStr += "<li class='on'>" + i + "</li>";
+                            } else {
+                                pageStr += "<li><a href='javascript:void(0)' onclick='ajaxQuery(" + i + ",15)' >" + i + "</a></li>"
+                            }
+                        }
+                    }
+                }
+                //1.3 下一页: 当前页小于总页码，显示下一页
+                if (data.page < data.pageNumber) {
+                    pageStr += "<li><a href='javascript:void(0)' onclick='ajaxQuery(" + (data.page + 1) + ",15)'>下一页 ></a></li>";
+                }
+
+                pageStr += "</ul>";
+
+                //将分页条追加到页面上
+                $(".pageList").html(pageStr);
+
+
+            });
+
+
+        }, "json");
+    }
+
+
+</script>
+
+</html>

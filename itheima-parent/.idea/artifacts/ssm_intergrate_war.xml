@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ssm_intergrate:war">
+    <output-path>$PROJECT_DIR$/ssm_intergrate/target</output-path>
+    <root id="archive" name="ssm_intergrate-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ssm_intergrate:war exploded" />
+    </root>
+  </artifact>
+</component>

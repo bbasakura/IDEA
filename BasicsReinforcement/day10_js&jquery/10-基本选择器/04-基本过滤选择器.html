@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //选择第一个div元素
+            $("#btn1").click(function () {
+                $("div:first").css({"color":"red","border":"1px solid blue"})
+            });
+            //选择最后一个div元素.
+            $("#btn2").click(function () {
+                $("div:last").css({"color":"red","border":"1px solid blue"})
+            });
+            //选择索引值为偶数 的div元素
+            $("#btn3").click(function () {
+                $("div:even").css({"color":"red","border":"1px solid blue"})
+            });
+            //选择索引值为奇数 的div元素
+            $("#btn4").click(function () {
+                $("div:odd").css({"color":"red","border":"1px solid blue"})
+            });
+            //选择索引值等于3的div元素
+            $("#btn5").click(function () {
+                $("div:eq(3)").css({"color":"red","border":"1px solid blue"})
+            });
+            //选择索引值大于3的div元素
+            $("#btn6").click(function () {
+                $("div:gt(3)").css({"color":"red","border":"1px solid blue"})
+            });
+            //选择class不为one的 所有div元素.
+            $("#btn7").click(function () {
+                $("div:not(.one)").css({"color":"red","border":"1px solid blue"})
+            });
+
+        })
+    </script>
+</head>
+<body>
+<h3>基本过滤选择器.</h3>
+<button id="reset">手动重置页面元素</button>
+<input type="checkbox" id="isreset" checked="checked" /><label for="isreset">点击下列按钮时先自动重置页面</label><br /><br />
+
+<input type="button" value="选择第一个div元素." id="btn1" />
+<input type="button" value="选择最后一个div元素." id="btn2" />
+<input type="button" value="选择索引值为偶数 的div元素." id="btn3" />
+<input type="button" value="选择索引值为奇数 的div元素." id="btn4" />
+<input type="button" value="选择索引值等于3的div元素." id="btn5" />
+<input type="button" value="选择索引值大于3的div元素." id="btn6" />
+<input type="button" value="选择class不为one的 所有div元素." id="btn7" />
+
+<br /><br />
+<div>0</div>
+<div>1</div>
+<div>2</div>
+<div class="one">3</div>
+<div class="one">4</div>
+<div class="one">5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+</body>
+</html>

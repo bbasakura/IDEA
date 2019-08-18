@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- c3p0连接池 外部配置文件引入 -->
+    <!--外来配置文件开关-->
+
+    <context:property-placeholder location="db.properties"/>
+
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+
+    <!-- 第一步：定义具体的平台事务管理器（DataSource事务管理器） -->
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 第二步：定义通知，通知中要处理的就是事务 -->
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+
+        <tx:attributes>
+            <tx:method name="transfer" isolation="DEFAULT" propagation="REQUIRED" timeout="-1" read-only="false"/>
+
+            <!--通配符的作用-->
+            <tx:method name="save*"/>
+            <tx:method name="update*"/>
+            <tx:method name="delete*"/>
+            <tx:method name="find*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 第三步：配置切入点，让通知关联切入点，即事务控制业务层的方法 -->
+    <aop:config>
+        <aop:pointcut id="txpiontcut" expression="execution(* com.itheima.spring_19..*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txpiontcut"/>
+    </aop:config>
+
+
+    <bean class="com.itheima.spring_19.AccounDaoImpl" id="accountDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean class="com.itheima.spring_19.AccountServiceImpl" id="accountService">
+
+        <property name="accountDao" ref="accountDao"/>
+
+    </bean>
+
+
+</beans>

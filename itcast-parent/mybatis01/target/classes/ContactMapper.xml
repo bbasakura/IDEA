@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace(命名空间)：映射文件的唯一标识 -->
+<mapper namespace="UserMapper">
+
+    <!-- 查询的statement，id：在同一个命名空间下的唯一标识，resultType：sql语句的结果集封装类型 -->
+    <select id="queryUserById" resultType="com.itheima.pojo.ContactInfo">
+        select * from contact_info where id=#{id}
+    </select>
+
+</mapper>

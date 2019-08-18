@@ -1,0 +1,20 @@
+
+l squid:LabelsShouldNotBeUsedCheck";Refactor the code to remove this label and the need for it.(×Á€„8ñáË¯¬-
+Vsquid:S1854"5Remove this useless assignment to local variable "o".(ÒêÅõûÿÿÿÿ8õÄ„°¬-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ú¶‚ºûÿÿÿÿ8Í¾Ú¯¬-
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¤íÕ£şÿÿÿÿ8õƒÔ°¬-
+usquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹äûİıÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(›€ì°8œáØ°¬-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(œŒĞ8õƒÔ°¬-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÔÈÅªıÿÿÿÿ8Ç©­¯¬-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(°¸”¹8Å›³¯¬-
+Gsquid:S1481"&Remove this unused "o" local variable.(ÒêÅõûÿÿÿÿ8õÄ„°¬-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÀúœÉÿÿÿÿÿ8õƒÔ°¬-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(êËÏ8µÙ¾¯¬-

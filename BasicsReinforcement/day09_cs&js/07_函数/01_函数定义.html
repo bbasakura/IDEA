@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<!--
+		【回顾】回顾java中函数（方法）的定义方式，重载
+		修饰符 返回值类型 方法名(参数类型 参数名,...){
+				方法体;
+		}
+		命名函数
+		修饰符 方法名(参数名,...){
+				方法体
+		}
+		【需求】定义一个方法，求取两个int类型数据的和
+	-->
+	<script>
+		function getSum(a,b) {
+			return a + b;
+        }
+
+        function getSum(a,b,c) {
+            return a - b;
+        }
+        // 在js中没有方法重载的 只有方法的覆盖 下面的将上面的覆盖
+        var sum = getSum(10,20,30);
+		console.log(sum)
+	</script>
+</html>

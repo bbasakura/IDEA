@@ -1,0 +1,10 @@
+
+§%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.lang.NoSuchMethodException', as it cannot be thrown from method's body.(“¾šŠ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆù¥Á
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ØÞ‡³ùÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤¸û™
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢ëÍïùÿÿÿÿ
+ÿsquid:S1598"éThis file "ReflactField.java" should be located in "com\itheima\reflect" directory, not in "D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day02çº¿ç¨‹æ± ï¼Œåå°„\src\com.itheima\reflect"(Do not use dots in directory names).(½Æ©š

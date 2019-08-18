@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubboxdemo-service/dubboxdemo-service.iml" filepath="$PROJECT_DIR$/dubboxdemo-service/dubboxdemo-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboxdemo-web/dubboxdemo-web.iml" filepath="$PROJECT_DIR$/dubboxdemo-web/dubboxdemo-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossipdubboxDemoparent.iml" filepath="$PROJECT_DIR$/gossipdubboxDemoparent.iml" />
+    </modules>
+  </component>
+</project>

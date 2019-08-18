@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cache-service/cache-service.iml" filepath="$PROJECT_DIR$/cache-service/cache-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gossip-parent.iml" filepath="$PROJECT_DIR$/.idea/gossip-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip-pojo/gossip-pojo.iml" filepath="$PROJECT_DIR$/gossip-pojo/gossip-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip-searchPortal/gossip-searchPortal.iml" filepath="$PROJECT_DIR$/gossip-searchPortal/gossip-searchPortal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_log_monitor/gossip_log_monitor.iml" filepath="$PROJECT_DIR$/gossip_log_monitor/gossip_log_monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_storm/gossip_storm.iml" filepath="$PROJECT_DIR$/gossip_storm/gossip_storm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_storm_realboard/gossip_storm_realboard.iml" filepath="$PROJECT_DIR$/gossip_storm_realboard/gossip_storm_realboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search-interface/search-interface.iml" filepath="$PROJECT_DIR$/search-interface/search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search-service/search-service.iml" filepath="$PROJECT_DIR$/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springjms_kafka_consumer/springjms_kafka_producer (1).iml" filepath="$PROJECT_DIR$/springjms_kafka_consumer/springjms_kafka_producer (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springjms_kafka_producer/springjms_kafka_producer (2).iml" filepath="$PROJECT_DIR$/springjms_kafka_producer/springjms_kafka_producer (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm_ack/storm_ack.iml" filepath="$PROJECT_DIR$/storm_ack/storm_ack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm_mysql/storm_mysql.iml" filepath="$PROJECT_DIR$/storm_mysql/storm_mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm_redis/storm_redis.iml" filepath="$PROJECT_DIR$/storm_redis/storm_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm_tick/storm_tick.iml" filepath="$PROJECT_DIR$/storm_tick/storm_tick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm_wordcount/storm_wordcount.iml" filepath="$PROJECT_DIR$/storm_wordcount/storm_wordcount.iml" />
+    </modules>
+  </component>
+</project>

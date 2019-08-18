@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>样式操作</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        .one{
+            width: 200px;
+            height: 140px;
+            margin: 20px;
+            background: red;
+            border: #000 1px solid;
+            float:left;
+            font-size: 17px;
+            font-family:Roman;
+        }
+
+        div,span{
+            width: 140px;
+            height: 140px;
+            margin: 20px;
+            background: #9999CC;
+            border: #000 1px solid;
+            float:left;
+            font-size: 17px;
+            font-family:Roman;
+        }
+
+        div .mini{
+            width: 40px;
+            height: 40px;
+            background: #CC66FF;
+            border: #000 1px solid;
+            font-size: 12px;
+            font-family:Roman;
+        }
+        div .mini01{
+            width: 40px;
+            height: 40px;
+            background: #CC66FF;
+            border: #000 1px solid;
+            font-size: 12px;
+            font-family:Roman;
+        }
+
+        /*待用的样式*/
+        .second{
+            width: 300px;
+            height: 340px;
+            margin: 20px;
+            background: yellow;
+            border: pink 3px dotted;
+            float:left;
+            font-size: 22px;
+            font-family:Roman;
+        }
+
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //addClass()
+            //采用属性增加样式(改变id=one的样式)
+            $("#b1").click(function () {
+                //$("#one").prop("class","one");
+                $("#one").prop("class","");
+            });
+            //addClass
+            $("#b2").click(function () {
+                $("#one").addClass("one");
+            });
+            //removeClass 删除class属性值
+            $("#b3").click(function () {
+                $("#one").removeClass();
+            });
+            //切换样式
+            $("#b4").click(function () {
+                //没有就添加 有就删除
+                $("#one").toggleClass("one");
+            });
+            //通过css()获得id为one背景颜色
+            $("#b5").click(function () {
+                console.log($("#one").css("background-color"));
+            });
+            //通过css()设置id为one背景颜色为绿色
+            $("#b6").click(function () {
+               // $("#one").css("background-color","green");
+                $("#one").css({"color":"red","background-color":"green"});
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<input type="button" value="保存"  class="mini" name="ok"  class="mini" />
+<input type="button" value="采用属性增加样式(改变id=one的样式)"  id="b1"/>
+<input type="button" value=" addClass"  id="b2"/>
+<input type="button" value="removeClass"  id="b3"/>
+<input type="button" value=" 切换样式"  id="b4"/>
+<input type="button" value=" 通过css()获得id为one背景颜色"  id="b5"/>
+<input type="button" value=" 通过css()设置id为one背景颜色为绿色"  id="b6"/>
+
+<div id="one">
+    id为one
+</div>
+
+</body>
+</html>

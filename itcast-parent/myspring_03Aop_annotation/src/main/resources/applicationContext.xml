@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!-- 1。确定目标 -->
+    <!-- 扫描bean组件 -->
+    <context:component-scan base-package="com.itheima.spring_14"/>
+    <!-- 2:编写通知 -->
+
+    <!-- 3：配置aop的aspectj的自动代理：
+            自动扫描bean组件中，含有@Aspect的bean，将其作为aop管理，开启动态代理    -->
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+
+
+</beans>

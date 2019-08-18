@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+
+
+
+    <!--其本质只是一个提供服务的应用, 不需要用户访问, 只需要启动加载spring容器, 通过dubbo构建服务即可-->
+    <!-- 加载spring容器 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:applicationContext*.xml</param-value>
+    </context-param>
+
+    <!--spring容器监听器-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+</web-app>

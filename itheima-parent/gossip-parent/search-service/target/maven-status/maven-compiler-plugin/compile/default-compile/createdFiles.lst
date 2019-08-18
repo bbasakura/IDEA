@@ -1,0 +1,3 @@
+com\itheima\service\SpiderKafkaConsumer.class
+com\itheima\service\IndexSearchServiceImpl.class
+com\itheima\service\indexWriterServiceImpl.class

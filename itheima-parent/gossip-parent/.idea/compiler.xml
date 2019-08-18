@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cache-service" />
+        <module name="gossip-pojo" />
+        <module name="gossip-searchPortal" />
+        <module name="gossip_log_monitor" />
+        <module name="gossip_storm" />
+        <module name="gossip_storm_realboard" />
+        <module name="search-interface" />
+        <module name="search-service" />
+        <module name="springjms_kafka_producer (1)" />
+        <module name="storm_mysql" />
+        <module name="storm_mysql (1)" />
+        <module name="storm_redis" />
+        <module name="storm_tick" />
+        <module name="storm_wordcount" />
+      </profile>
+      <profile name="Annotation profile for storm_ack" enabled="true">
+        <sourceOutputDir name="../storm_wordcount/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../storm_wordcount/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="storm_ack" />
+      </profile>
+      <profile name="Annotation profile for springjms_kafka_producer (2)" enabled="true">
+        <sourceOutputDir name="../springjms_kafka_consumer/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../springjms_kafka_consumer/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springjms_kafka_producer (2)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cache-service" target="1.8" />
+      <module name="gossip-parent" target="1.8" />
+      <module name="gossip-pojo" target="1.8" />
+      <module name="gossip-searchPortal" target="1.8" />
+      <module name="gossip_log_monitor" target="1.8" />
+      <module name="gossip_storm" target="1.8" />
+      <module name="gossip_storm_realboard" target="1.8" />
+      <module name="ReadFileSpout" target="1.8" />
+      <module name="search-interface" target="1.8" />
+      <module name="search-service" target="1.8" />
+      <module name="springjms_kafka_producer (1)" target="1.8" />
+      <module name="springjms_kafka_producer (2)" target="1.8" />
+      <module name="storm_ack" target="1.8" />
+      <module name="storm_mysql" target="1.8" />
+      <module name="storm_mysql (1)" target="1.8" />
+      <module name="storm_redis" target="1.8" />
+      <module name="storm_tick" target="1.8" />
+      <module name="storm_wordcount" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

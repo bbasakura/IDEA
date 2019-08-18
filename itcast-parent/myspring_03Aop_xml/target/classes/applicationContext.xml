@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 1.确定了要增强的target对象 -->
+    <!-- 对于spring来说，目标：就是bean对象 -->
+    <!-- 基于接口类 -->
+
+    <bean id="customerService" class="com.itheima.spring_12.CustomerService"/>
+
+    <bean id="productService" class="com.itheima.spring_12.ProductService"/>
+
+    <!-- 2.配置增强：原则bean能增强bean
+        Advice:通知，增强
+    -->
+
+    <bean id="timeLogInterceptor" class="com.itheima.spring_12.TimeLogInterceptor"/>
+
+
+    <!-- 3.配置切入点和切面 :aop:config-->
+
+
+    <aop:config>
+
+
+        <!--<aop:pointcut id="myPointcut" expression="bean(*Service)"/>-->
+
+
+        <aop:pointcut id="myPointcut" expression="execution(* com.itheima.spring_12..*.*(..))"/>
+        <!--注意空格-->
+
+
+        <!--
+    配置切入点：即你要拦截的哪些 连接点（方法）
+        * expression：表达式：匹配方法的，语法：使用aspectj的语法，相对简单
+        * 表达式：bean（bean的名字），你要对哪些bean中的所有方法增强
+        * expression=bean(*Service)：在spring容器中，所有id/name以Service单词结尾的bean的都能被拦截
+        * id="myPointcut"：为切入点定义唯一标识
+-->
+        <aop:advisor advice-ref="timeLogInterceptor" pointcut-ref="myPointcut"/>
+
+    </aop:config>
+
+
+    <!--===========================================================================-->
+
+    <!--//前置通知-->
+    <bean id="myAspect" class="spring_13.MyAspect"/>
+
+    <aop:config>
+
+        <!--拦截哪些bean的方法-->
+        <aop:pointcut id="myPointcut" expression="bean(*Service)"/>
+
+
+        <!--对哪些方法进行哪些增强-->
+        <aop:aspect ref="myAspect">
+
+            <!-- 第一个前置通知 ：在访问目标对象方法之前，先执行通知的方法
+            method：advice类中的方法名，
+            pointcut-ref="myPointcut"：注入切入点
+            目的是让通知关联切入点
+        -->
+
+
+            <aop:before method="firstbefore" pointcut-ref="myPointcut"/>
+
+            
+            
+        </aop:aspect>
+
+
+
+    </aop:config>
+
+
+</beans>

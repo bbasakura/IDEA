@@ -1,0 +1,13 @@
+
+psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(―Ρ™
+@squid:S1989"&Add a "try/catch" block for "forward".(δύφΣÿÿÿÿÿ
+;squid:S1989"&Add a "try/catch" block for "forward".(σ±ή£
+Osquid:S1161":Add the "@Override" annotation above this method signature(‹¨―Ώ
+Tsquid:S1161":Add the "@Override" annotation above this method signature(Οϋ©Φϋÿÿÿÿ
+?squid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ
+;squid:S1989"&Add a "try/catch" block for "forward".(σ±ή£
+=squid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ
+Hsquid:S1989"3Add a "try/catch" block for "setCharacterEncoding".(ο‡‹κ
+@squid:S1989"&Add a "try/catch" block for "forward".(δύφΣÿÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ
+?squid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ

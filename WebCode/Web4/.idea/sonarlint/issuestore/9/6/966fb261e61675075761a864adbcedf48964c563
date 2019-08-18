@@ -1,0 +1,8 @@
+
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õ­¥Ûşÿÿÿÿ
+˜squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î
+Tsquid:S2696"6Make the enclosing method "static" or remove this set.(¤·šÜ8üûÆí±-
+msquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8áÒ´ê±-
+nsquid:UselessImportCheck"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8áÒ´ê±-
+Ysquid:S2696"6Make the enclosing method "static" or remove this set.(ù÷†ùÿÿÿÿ8üûÆí±-
+[squid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8áÒ´ê±-

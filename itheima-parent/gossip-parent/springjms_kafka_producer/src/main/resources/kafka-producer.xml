@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--加载属性配置文件-->
+    <context:property-placeholder location="classpath:init.properties"></context:property-placeholder>
+
+
+    <!--包扫描-->
+    <context:component-scan base-package="com.itheima.kafka.producer"/>
+
+
+    <!--加载配置信息-->
+    <!-- 定义producer的参数信息 -->
+    <bean id="producerProperties" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="bootstrap.servers" value="${kafka.servers}"/>
+                <entry key="retries" value="10"/>
+                <entry key="batch.size" value="16384"/>
+                <entry key="linger.ms" value="1"/>
+                <entry key="buffer.memory" value="33554432"/>
+                <entry key="key.serializer" value="org.apache.kafka.common.serialization.IntegerSerializer"/>
+                <entry key="value.serializer" value="org.apache.kafka.common.serialization.StringSerializer"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <!--生产者的工厂-->
+    <!-- 创建kafkatemplate需要使用的producerfactory bean -->
+    <bean id="producerFactory" class="org.springframework.kafka.core.DefaultKafkaProducerFactory">
+        <constructor-arg>
+            <ref bean="producerProperties"/>
+        </constructor-arg>
+    </bean>
+
+
+    <!--创建kafkaTemplate-->
+    <bean id="kafkaTemplate" class="org.springframework.kafka.core.KafkaTemplate">
+        <!--生产者的工厂-->
+        <constructor-arg ref="producerFactory"/>
+        <!--自动刷新-->
+        <constructor-arg name="autoFlush" value="true"/>
+        <!--默认写入的topic名称-->
+        <property name="defaultTopic" value="${kafka.topic}"/>
+    </bean>
+
+</beans>

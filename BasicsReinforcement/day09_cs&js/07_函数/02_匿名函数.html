@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *
+        * 匿名函数
+        * 格式
+        * var 变量名 = function(参数名){
+        *   方法体;
+        * }
+        * 调用
+        * 变量名();
+        * js中方法可以赋值给变量
+        * */
+        var getSum = function (a,b) {
+            return a + b;
+        }
+        //调用
+        var sum = getSum(10,20);
+        console.log(sum)
+        console.log("-------------------------------------")
+        //fn是一个匿名方法  var fn = fouction(){}
+        //调用时：直接fn();
+        function demo(fn) {
+            fn();
+        }
+
+
+         demo(function () {
+            console.log("---------");
+        });
+
+
+        demo(function () {
+            console.log("++++++++++");
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

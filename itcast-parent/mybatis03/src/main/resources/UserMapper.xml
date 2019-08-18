@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace(命名空间)：映射文件的唯一标识 -->
+<mapper namespace="com.itheima.mapper.UserMapper">
+
+    <!--&lt;!&ndash; 查询的statement，id：在同一个命名空间下的唯一标识，resultType：sql语句的结果集封装类型 &ndash;&gt;-->
+    <!--<select id="queryContactById" resultType="com.itheima.pojo.User" >-->
+    <!--select * from contact_info where id=#{id}-->
+    <!--</select>-->
+
+    <!--&lt;!&ndash;查询所有的通讯录&ndash;&gt;-->
+    <!--<select id="queryContactAll" resultType="com.itheima.pojo.User">-->
+    <!--SELECT-->
+    <!--*-->
+    <!--FROM-->
+    <!--mydb1.contact_info-->
+    <!--</select>-->
+
+    <!--&lt;!&ndash;插入通讯录&ndash;&gt;-->
+    <!--<insert id="insertContact" parameterType="com.itheima.pojo.User">-->
+    <!--INSERT INTO mydb1.contact_info (-->
+    <!--name,-->
+    <!--gender, -->
+    <!--birthday,-->
+    <!--birthplace,-->
+    <!--mobile,-->
+    <!--email-->
+    <!--)-->
+    <!--VALUES-->
+    <!--(-->
+    <!--#{name},-->
+    <!--#{gender},-->
+    <!--#{birthday},-->
+    <!--#{birthplace},-->
+    <!--#{mobile},-->
+    <!--#{email}-->
+    <!--);-->
+    <!--</insert>-->
+    <!--<update id="updateContact" parameterType="com.itheima.pojo.User">-->
+    <!--UPDATE t_user-->
+
+    <!--SET -->
+    <!--name= #{name},-->
+    <!--gender=#{gender},-->
+    <!--birthday=#{birthday},-->
+    <!--birthplace=#{birthplace},-->
+    <!--mobile=#{mobile},-->
+    <!--email=#{email}-->
+    <!--WHERE-->
+    <!--(id= #{id});-->
+    <!--</update>-->
+
+    <!--&lt;!&ndash;根据id删除通讯录&ndash;&gt;-->
+    <!--<delete id="deleteContactById" parameterType="java.lang.Integer">-->
+
+    <!--delete from t_user where id=#{id}-->
+    <!--</delete>-->
+    <!--</mapper>-->
+    <!-- <sql id="commonSql">
+            id,user_name,
+                password,
+                name,
+                age,
+                sex,
+                birthday,
+                created,
+                updated
+        </sql> -->
+
+
+    <!-- resultMap:自定义映射关系
+        属性：type-结果集的封装类型，id-唯一标识，autoMapping-开启自动匹配，如果开启了驼峰匹配，就以驼峰匹配的形式进行匹配
+        id:指定主键映射的，不要省。提高性能
+        result：其他的非主键普通字段
+            子标签的属性：Column-表中的字段名，property-对应的java属性名
+     -->
+    <!--<resultMap type="User" id="userMap" autoMapping="true">-->
+    <!--<id column="id" property="id"/>-->
+    <!--&lt;!&ndash; <result column="user_name" property="userName"/> &ndash;&gt;-->
+    <!--</resultMap>-->
+
+    <!-- statement：查询的statement
+        id:在该映射文件下的唯一标识。在使用动态代理之后，必须和接口的方法名一致。必须属性
+        resultType:结果集的映射类型。在使用动态里之后，必须和接口方法的返回值类型一致。必须属性
+        parameterType:参数类型。可省略
+     -->
+
+    <!-- 插入的statement
+        id:在该映射文件下的唯一标识。在使用动态代理之后，必须和接口的方法名一致。必须属性
+        parameterType:参数类型。可省略
+        useGeneratedKeys:开启主键回写,回写到参数的pojo对象里
+        keyColumn:主键列名
+        keyProperty：主键对应的属性名
+     -->
+
+
+    <!-- 删除的statement
+        id：在该映射文件下的唯一标识。在使用动态代理之后，必须和接口的方法名一致。必须属性
+        parameterType:参数类型。可省略
+     -->
+
+    <select id="queryUserListLikeUserName" resultType="User">
+
+        select * from mydb1.tb_user where sex=1
+        <if test="userName!=null and userName.trim()!=''">
+            AND user_name LIKE '%' #{userName} '%'
+        </if>
+
+    </select>
+
+
+
+    <!--查询男性用户，如果输入了用户名则按照用户名模糊查找，否则如果输入了年龄则按照年龄查找，-->
+    <!--* 否则查找用户名为“zhangsan”的用户-->
+
+    <select id="queryUserListLikeUserNameOrAge" resultType="User">
+        select * from mydb1. tb_user where sex=1
+        <!-- choose:条件选择
+            when：test-判断条件，一旦有一个when成立，后续的when都不再执行
+            otherwise：所有的when都不成立时，才会执行
+         -->
+        <!--<choose>-->
+        <!--<when test="userName!=null and userName.trim()!=''">and user_name like '%' #{userName} '%'</when>-->
+        <!--<when test="age != null">and age = #{age}</when>-->
+        <!--<otherwise>and user_name = 'zhangsan' </otherwise>-->
+    <!--</choose>-->
+        <choose>
+            <when test="userName!=null and userName.trim()!=''" >and user_name LIKE '%' #{userName} '%'</when>
+            <when test="age !=null ">AND age= #{age} </when>
+            <otherwise >and user_name ="zhangsan"</otherwise>
+        </choose>
+
+    </select>
+
+     <!-- 查询所有用户，如果输入了用户名按照用户名进行模糊查询，如果输入年龄，按照
+     * 年龄进行查询，如果两者都输入，两个条件都要成立。-->
+
+    <select id="queryUserListLikeUserNameAndAge" resultType="User">
+        select * from tb_user
+        <!--
+            自动添加where关键字
+            有一定的纠错功能：去掉sql语句块之前多余的一个and|or
+            通常结合if或者choose使用
+         -->
+        <where>
+            <if test="userName!=null and userName.trim()!=''">user_name like '%' #{userName} '%'</if>
+            <if test="age!=null">and age = #{age}</if>
+        </where>
+
+    </select>
+
+    <update id="updateUserSelective" >
+        UPDATE tb_user
+        <!--
+            set自动添加set关键字
+            也有一定的纠错功能：自动去掉sql语句块之后多余的一个逗号
+         -->
+        <set>
+            <if test="userName!=null and userName.trim()!=''">user_name = #{userName},</if>
+            <if test="password!=null and password.trim()!=''">password = #{password},</if>
+            <if test="name!=null and name.trim()!=''">name = #{name},</if>
+            <if test="age!=null">age = #{age},</if>
+            <if test="sex!=null">sex = #{sex},</if>
+            updated = now(),
+        </set>
+        WHERE
+        (id = #{id});
+    </update>
+
+
+
+    <!--根据多个id查询用户信息-->
+    <select id="queryUserListByIds" resultType="User">
+        select * from tb_user where id in
+        <!--
+            foreach:遍历集合
+            collection：接收的集合参数
+            item：遍历的集合中的一个元素
+            separator:分隔符
+            open:以什么开始
+            close：以什么结束
+         -->
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </select>
+
+
+</mapper>

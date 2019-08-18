@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>内部插入脚本</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 340px;
+            margin: 60px;
+            background: #9999CC;
+            border: #000 1px solid;
+            float:left;
+            font-size: 17px;
+            font-family:Roman;
+        }
+
+        span{
+            width: 140px;
+            height: 20px;
+            margin-top: 30px;
+            margin-left: 20px;
+            background: #9999CC;
+            border: #000 1px solid;
+            float:left;
+            font-size: 17px;
+            font-family:Roman;
+        }
+
+        #span1{
+            margin-top: 100px;
+        }
+
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //点击按钮，创建一个span，加在第二个div中的span后面
+            $("#b1").click(function () {
+                //$(html)
+
+               // $("#div2").append( $("<span>my name is span</span>"));
+                $("<span>my name is span</span>").appendTo($("#div2"));
+
+            });
+            //击按钮，创建一个span，加在第二个div中的span前面
+            $("#b2").click(function () {
+                $("#div2").prepend($("<span>my name is span</span>"));
+            });
+            //点击按钮，创建一个div，加在第二个div前面
+            $("#b3").click(function () {
+                $("#div2").before($("<div>i am new div</div>"))
+            });
+            $("#b4").click(function () {
+                $("#div2").after($("<div>i am new div</div>"));
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<input type="button"  id="b1" value="点击按钮，创建一个span，加在第二个div中的span后面" />
+<input type="button"  id="b2" value="点击按钮，创建一个span，加在第二个div中的span前面" />
+<input type="button"  id="b3" value="点击按钮，创建一个div，加在第二个div前面" />
+<input type="button"  id="b4" value="点击按钮，创建一个div，加在第二个div后面" />
+<div id="div1">
+    第一个div
+</div>
+
+
+<div id="div2">
+			<span id="span1">
+				第二个div的span
+			</span>
+</div>
+
+<div id="div3">
+    第三个div
+</div>
+</body>
+
+</html>

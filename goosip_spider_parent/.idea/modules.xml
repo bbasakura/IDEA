@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/goosip_spider_parent.iml" filepath="$PROJECT_DIR$/goosip_spider_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/goosip_spider_redis/goosip_spider_redis.iml" filepath="$PROJECT_DIR$/goosip_spider_redis/goosip_spider_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_search_kafka/gossip_search_kafka.iml" filepath="$PROJECT_DIR$/gossip_search_kafka/gossip_search_kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_search_lucene/gossip_search_lucene.iml" filepath="$PROJECT_DIR$/gossip_search_lucene/gossip_search_lucene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_search_solr/gossip_search_solr.iml" filepath="$PROJECT_DIR$/gossip_search_solr/gossip_search_solr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_search_solrcloud/gossip_search_solrcloud.iml" filepath="$PROJECT_DIR$/gossip_search_solrcloud/gossip_search_solrcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_spider_base/gossip_spider_base.iml" filepath="$PROJECT_DIR$/gossip_spider_base/gossip_spider_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_spider_deploy/gossip_spider_deploy.iml" filepath="$PROJECT_DIR$/gossip_spider_deploy/gossip_spider_deploy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_spider_kafka/gossip_spider_kafka.iml" filepath="$PROJECT_DIR$/gossip_spider_kafka/gossip_spider_kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gossip_spider_news/gossip_spider_news.iml" filepath="$PROJECT_DIR$/gossip_spider_news/gossip_spider_news.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm_wordcount/storm_wordcount.iml" filepath="$PROJECT_DIR$/storm_wordcount/storm_wordcount.iml" />
+    </modules>
+  </component>
+</project>

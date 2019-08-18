@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        * 从第一位字符开始解析 直到无法解析
+        * */
+        var a = "10.1";
+        var b = parseInt(a);
+       console.log(typeof b);
+       console.log(b);
+
+        /*
+         * 从第一位字符开始解析 直到无法解析
+        * */
+       var c = "102";
+       var d = parseFloat(c);
+        console.log(typeof d);
+        console.log(d);
+
+        var flag = isNaN("非数字");
+        console.log(flag);
+        flag = isNaN(10);
+        console.log(flag);
+        //"var x=10;var y=20;alert(x + y)";
+        //将字符串中的js代码解析执行
+        eval("var x=10;var y=20;alert(x + y)");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

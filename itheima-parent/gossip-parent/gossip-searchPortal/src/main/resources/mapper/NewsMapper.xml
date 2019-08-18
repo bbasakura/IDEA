@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+命名空间: 接口的包类路径
+给pojo起了别名
+value
+-->
+<mapper namespace="com.itheima.mapper.NewsMapper">
+
+    <!--获取一页新闻数据-->
+    <select id="queryAndIdGtAndPage" parameterType="string" resultType="News">
+        select * from news where id > '${value}'  limit 0,100
+    </select>
+
+
+    <!--获取一页中最大id值-->
+    <select id="queryAndIdMax" parameterType="string" resultType="string">
+        select max(id) from (select * from news where id > '${value}'  limit 0,100 ) as temp
+    </select>
+</mapper>

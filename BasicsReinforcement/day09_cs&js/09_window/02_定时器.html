@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //定时器
+        //setTimeout("需要执行的代码",毫秒值)
+        // setTimeout("alert('时间到了？')",1000);
+        setTimeout("function a() {  }", 2000)
+
+        function a() {
+            alert("什么？")
+        };
+        var t = setInterval("alert('是吗？')", 3000);
+        //停止的时候会有一个返回值，接受这个返回值，用方法clearInterval（返回值），就结束了无限循环
+
+        function clearclear() {
+
+            clearInterval(t);
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="取消定时效果" onclick="clearclear()">
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script>
+		window.onload = function () {
+            var emailElement = document.getElementById("email");
+            emailElement.onblur = function () {
+				//失去焦点  获取用户输入的邮箱内容
+                var email = emailElement.value;
+				//使用正则校验邮箱是否符合规则
+				var reg = /^[A-z0-9_-]{3,12}@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+                var flag = reg.test(email);
+                if(flag){
+					document.getElementById("email_msg").innerHTML = "<font color='green'>√</font>"
+				}else{
+                    document.getElementById("email_msg").innerHTML = "<font color='red'>X</font>"
+				}
+            }
+			var phoneElement = document.getElementById("phone");
+            phoneElement.onblur = function () {
+                var phoneNum = phoneElement.value;
+                var reg = /1[35678]\d{9}$/;
+                var flag = reg.test(phoneNum);
+                if(flag){
+                    document.getElementById("phone_msg").innerHTML = "<font color='green'>√</font>"
+                }else{
+                    document.getElementById("phone_msg").innerHTML = "<font color='red'>X</font>"
+                }
+            }
+        }
+	</script>
+	<body>
+		<form action="#" method="get" >
+			<table width="60%" height="60%"  align="center" bgcolor="#ffffff">
+				<tr>
+					<td colspan="3">会员注册USER REGISTER</td>
+				</tr>
+				<tr>
+					<td width="20%">用户名:</td>
+					<td width="40%"><input type="text" name="username" id="username"></td>
+					<td width="40%"><span id="username_msg"></span></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input type="password" name="password" id="password"></td>
+					<td><span id="password_msg"></span></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="email" id="email"></td>
+					<td><span id="email_msg"></span></td>
+				</tr>
+				<tr>
+					<td>手机号:</td>
+					<td><input type="text" name="phone" id="phone"></td>
+					<td><span id="phone_msg"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="注册" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

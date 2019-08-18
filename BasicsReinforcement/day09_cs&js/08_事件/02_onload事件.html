@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//事件派发
+			//整个页面加载完成
+			//如果涉及到操作元素相关js代码 我们就可以放在onload事件中----元素相关
+			window.onload = function () {
+				//alert("整个页面加载完成....")
+                var divElement = document.getElementById("mydiv");
+                alert(divElement);
+            }
+		</script>
+	</head>
+	<body>
+
+		<div id="mydiv">元素</div>
+		<!--
+			【需求】将事件绑定案例中的代码挪到head标签中观察执行结果
+		-->
+	</body>
+</html>

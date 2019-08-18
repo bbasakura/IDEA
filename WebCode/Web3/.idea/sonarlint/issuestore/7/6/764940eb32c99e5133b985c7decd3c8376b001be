@@ -1,0 +1,12 @@
+
+]squid:S1161!":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ8¢ºÖ—±-
+Hsquid:S1989#"%Add a "try/catch" block for "doPost".(ã÷éíùÿÿÿÿ8¢ºÖ—±-
+Hsquid:S1989#"%Add a "try/catch" block for "doPost".(ã÷éíùÿÿÿÿ8¢ºÖ—±-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—¸Õ§8¢ºÖ—±-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(‹¨¯¿8¢ºÖ—±-
+Bsquid:S1989"$Add a "try/catch" block for "close".(„¸Ç§8¢ºÖ—±-
+Asquid:S1989"#Add a "try/catch" block for "copy".(°ÓÆž8¢ºÖ—±-
+Gsquid:S1989"$Add a "try/catch" block for "close".(€¶º‡ýÿÿÿÿ8¢ºÖ—±-
+Qsquid:S1989".Add a "try/catch" block for "getOutputStream".(êÄ‰ìýÿÿÿÿ8¢ºÖ—±-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦ îÓ8õ¾Ù˜±-
+Csquid:S1989"%Add a "try/catch" block for "encode".(ö’ª¬8‘³¸™±-

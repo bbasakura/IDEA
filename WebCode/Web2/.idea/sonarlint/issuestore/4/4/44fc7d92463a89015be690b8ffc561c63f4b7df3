@@ -1,0 +1,19 @@
+
+Fsquid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8—Ξ¨μ°-
+Osquid:S1989"3Add a "try/catch" block for "setCharacterEncoding".(ο‡‹κ8Ο’ªμ°-
+Tsquid:S1161":Add the "@Override" annotation above this method signature(Οϋ©Φϋÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ύΐώƒ8ξ±μ°-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(½Δ‡ψ8‹Χ―μ°-
+usquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΑύΥ―ϋÿÿÿÿ
+Osquid:S1161":Add the "@Override" annotation above this method signature(‹¨―Ώ
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ΌγάΫϊÿÿÿÿ8Ψ¦³μ°-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ό®“όÿÿÿÿ8¤®μ°-
+Fsquid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8—Ξ¨μ°-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(›δ“ς8έ¬μ°-
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(θμ68θϋ΄μ°-

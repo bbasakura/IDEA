@@ -1,0 +1,6 @@
+
+Ssquid:UnusedPrivateMethod"1Remove this unused private "Student" constructor.(÷Äè
+;squid:S1068"&Remove this unused "id" private field.(æ¨ç†
+|"squid:ClassVariableVisibilityCheck"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+{"squid:ClassVariableVisibilityCheck"OMake age a static final constant or non-public and provide accessors if needed.(×Áò¿
+úsquid:S1598"äThis file "Student.java" should be located in "com\itheima\reflect" directory, not in "D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day02çº¿ç¨‹æ± ï¼Œåå°„\src\com.itheima\reflect"(Do not use dots in directory names).(½Æ©š

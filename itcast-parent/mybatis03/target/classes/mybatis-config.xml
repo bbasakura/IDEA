@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+        <!--Jdbc的配置-->
+    <properties resource="jdbc.properties" />
+
+    <settings>
+        <!-- 开启驼峰匹配：经典的数据库列名（多个单词下划线连接）映射到经典的java属性名（多个单词驼峰连接） -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <!-- 类型别名：type-pojo类的全路径，alias-别名名称（可随便写，推荐和类名一致） -->
+        <!--<typeAlias type="com.itheima.pojo.ContactInfo" alias="contact" />-->
+            <!--扫描包名-->
+        <package name="com.itheima.pojo"/>
+
+    </typeAliases>
+
+    <!-- 环境：说明可以配置多个，default:指定生效的环境 -->
+    <environments default="development">
+        <!-- id:环境的唯一标识 -->
+        <environment id="development">
+            <!-- 事务管理器，type：类型 -->
+            <transactionManager type="JDBC" />
+            <!-- 数据源：type-池类型的数据源 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClass}" />
+                <property name="url" value="${jdbc.url}" />
+                <property name="username" value="${jdbc.username}" />
+                <property name="password" value="${jdbc.password}" />
+
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 映射文件 -->
+    <mappers>
+        <mapper resource="UserMapper.xml"/>
+        <mapper resource="CommonSQL.xml"/>
+        <mapper resource="OrderMapper.xml"/>
+
+        <!-- 动态代理时：满足这些规则
+			1.映射文件和mapper接口在同一个目录下
+			2.命名一致
+			3.命名空间必须是接口的全路径
+		 -->
+
+    </mappers>
+</configuration>

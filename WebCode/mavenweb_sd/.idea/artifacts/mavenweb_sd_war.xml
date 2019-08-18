@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mavenweb_sd:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="mavenweb_sd-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="mavenweb_sd:war exploded" />
+    </root>
+  </artifact>
+</component>

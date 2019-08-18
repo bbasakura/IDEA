@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="commons-logging-1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/mchange-commons-java-0.2.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/mysql-connector-java-5.1.37-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/spring-beans-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/spring-core-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/spring-jdbc-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day07_JDBC连接池/lib/spring-tx-5.0.0.RELEASE.jar!/" />
+      <root url="file://$PROJECT_DIR$/day07_JDBC连接池/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/day07_JDBC连接池/lib" recursive="false" />
+  </library>
+</component>

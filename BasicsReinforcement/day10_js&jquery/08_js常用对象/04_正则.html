@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    正则创建对象的方式
+    方式一
+    var reg = new RegExp("正则表达式");
+    方式二(常用)
+    var reg = /正则表达式/;
+    //校验字符串是否符合规则的方法
+    正则对象,test(字符串);
+    -->
+    <script>
+        //^1[35678]\d{9}$
+        //var reg = new RegExp("^1[35678]\\d{9}$");
+        var reg = /1[35678]\d{9}$/;
+        var num = "17111111111";
+        var flag = reg.test(num);
+        console.log(flag);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

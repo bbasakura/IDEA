@@ -1,0 +1,5 @@
+
+Rsquid:S1481"4Remove this unused "servletResponse" local variable.(ŞØ÷†8¦ß•î±-
+squid:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õ­¥Ûşÿÿÿÿ
+˜squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î
+[squid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8¦ß•î±-

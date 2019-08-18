@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    /*
+     * 1. 给表单添加提交事件；
+     * 2. 对用户名和密码进行非空校验；
+     * 3. 校验不通过：在对应输入框后面显示错误提示信息；
+     * 4. 校验通过：在对应的输入框后面显示"√"；
+     * 5. 所有校验均通过后表单成功提交；
+     */
+    window.onload = function () {
+        //1./表单添加提交事件，先拿到各个标签对象,,,请认真拼写每一个单词！！！！！！
+        var regist = document.getElementById("registForm");
+        var usersname = document.getElementById("username");
+        var password = document.getElementById("password");
+        var username_msg = document.getElementById("username_msg");
+        var password_msg = document.getElementById("password_msg");
+        //非空判断，
+        regist.onsubmit = function () {
+            var use = username.value;
+            var pass = password.value;
+            if (use && pass) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        //离焦事件
+        usersname.onblur = function () {
+            var use = usersname.value;
+            if (use) {
+                username_msg.innerHTML = "<font color='green'>√</font>";
+            } else {
+                username_msg.innerHTML = "<font color='red'>账号不能为空</font>";
+            };
+        };
+        password.onblur = function () {
+            var pass = password.value;
+            if (pass) {
+                password_msg.innerHTML = "<font color='green'>√</font>";
+            } else {
+                password_msg.innerHTML = "<font color='red'>密码不能为空</font>";
+            };
+        };
+
+    };
+</script>
+<body>
+<h2 align="center">注册表单校验</h2>
+<form action="#" method="get" id="registForm">
+    <table width="40%" height="60%" align="center" bgcolor="#ffffff" align="center">
+        <tr>
+            <td colspan="3">会员注册USER REGISTER</td>
+        </tr>
+        <tr>
+            <td width="20%">用户名:</td>
+            <td width="40%"><input type="text" name="username" id="username"></td>
+            <td width="40%"><span id="username_msg"></span></td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td><input type="password" name="password" id="password"></td>
+            <td><span id="password_msg"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="注册"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

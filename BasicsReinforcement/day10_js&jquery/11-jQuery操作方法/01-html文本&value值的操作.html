@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //console.log($("#mydiv").text()); //-->innerText
+            console.log($("#mydiv").html()); // innerHTML
+            //-- 不管是用text还是html方法都是将之前的内容替换掉
+            //$("#mydiv").text("<font color='red'>你好</font>")
+            $("#mydiv").html("<font color='red'>你好</font>")
+            console.log($("#myinput").val());
+            //使用val（）方法给input文本框中设置值；
+            console.log($("#myinput").val("全艺"));
+        });
+    </script>
+
+</head>
+
+<body>
+<!--
+    【需求】在控制台中操作：
+    1. 使用html()方法，text（）方法获取div中的内容；
+    2. 使用html（）方法，text（）方法给div中设置内容；
+    3. 使用val（）方法获取input中的值；
+    4. 使用val（）方法给input文本框中设置值；
+
+-->
+<input id="myinput" type="text" name="username" value="张三" /><br />
+<div id="mydiv">
+    <p>
+        <a href="#">标题标签</a>
+    </p>
+</div>
+</body>
+</html>

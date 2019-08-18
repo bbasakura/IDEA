@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //remove() 删除 删除所有包括自己
+            //$("#city").remove();
+            //empty() 清空所有的子元素
+            $("#city").empty();
+        });
+    </script>
+</head>
+<body>
+<!--
+【需求】
+1. 使用remove()方法删除素材中的select标签，并观察删除后的效果；
+2. 使用empty()方法清空素材中的select标签，并观察效果；
+-->
+<select name="city" id="city">
+    <option value="">---请选择城市---</option>
+    <option value="bj">北京</option>
+    <option value="sh">上海</option>
+    <option value="sz">深圳</option>
+    <option value="gz">广州</option>
+</select>
+</body>
+
+</html>

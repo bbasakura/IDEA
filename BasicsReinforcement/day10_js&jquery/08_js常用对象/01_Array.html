@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//js中的数组相当于 java中没有泛型的list集合
+			//长度可变 类型任意
+			var arr = new Array();
+            arr[0] = 10;
+            arr[1] = '哈哈';
+            arr[2] = true;
+            var arr1 = [1,2,'呵呵',false];
+
+            var arr2 = arr.concat(arr1);
+            console.log(arr2);
+            var arr3 = arr2.concat(arr,arr1);
+            console.log(arr3);
+            var arr4 = arr3.concat("哈哈",'嘿嘿',1212);
+            console.log(arr4);
+            var arr5 = arr4.reverse();
+            console.log(arr5);
+
+            //将数字以字符串的形式拼接打印
+            var arr6 = arr5.join();//默认逗号拼接
+            console.log(arr6);
+            //指定拼接符号
+            var arr7 = arr5.join("-");
+            console.log(arr7);
+
+            var arr8 = [2,1,33,6,55,9,8];
+            var arr9 = arr8.sort();
+            console.log(arr9);
+            var arr10 = ['a','cc','2','f','e','z','g'];
+            console.log(arr10.sort());
+            //按照首字母 字典排序 首字母相同 按照第二个排序
+			//sort 给数字按照升序 或者 降序 排序
+			var arr11 = arr8.sort(function (a, b) {
+			    return a - b;//升序
+			    //return b - a;//降序
+			})
+            console.log(arr11);
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

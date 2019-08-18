@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //attr 相当于之前 Attribute操作 -- 可以操作存在的属性 可以操作不存在的属性
+            //prop 相当于 对象.属性  只能操作存在的属性
+            //分别使用attr()方法和prop()方法获取li的quanyi属性值
+            console.log($("#bj").attr("quanyi"));
+            //只能操作存在的属性
+            console.log($("#bj").prop("quanyi"));
+            //分别使用attr()方法和prop()方法给checkbox设置guangxudi属性
+            //$("#bj").attr("guangxudi","登基大典")
+            //$("#bj").prop("guangxudi","登基大典")
+            //$("#bj").attr("class","guangxu")
+            $("#bj").prop("class","guangxu")
+            //一般会去是用 prop
+            //分别使用attr()和prop()方法获取checkbox的checked属性
+            //attr 相当于我们自己操作标签  可以写存在的 可以写不存在的
+            //prop 获取对象中的属性
+            console.log($("#hobby").attr("checked"));
+            console.log($("#hobby").prop("checked"));
+        });
+    </script>
+</head>
+<body>
+
+
+<ul>
+    <li id="bj" quanyi="beijing">北京</li>
+    <li id="sh" quanyi="shanghai">上海</li>
+    <li id="gz" quanyi="guangzhou">北京</li>
+    <li id="sz" quanyi="shengzhen">深圳</li>
+</ul>
+    <input type="checkbox" value="滑雪" id="hobby" checked="checked">滑雪
+
+</body>
+</html>

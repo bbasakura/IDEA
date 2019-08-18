@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--目标：将数据源和jdbcTemplate都交给Spring来管理：
+         在applicationContext.xml中配置dataSource连接池和jdbcTemplate模版对象。编写applicationContext.xml文件
+
+         类似于：DriverManagerDataSource dataSource = new DriverManagerDataSource();
+             dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+             dataSource.setUrl("jdbc:mysql:///itcastspring");
+             dataSource.setUsername("root");
+             dataSource.setPassword("root");
+
+    -->
+    <!-- 配置内置的数据源bean -->
+    <!--<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">-->
+    <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+    <!--<property name="url" value="jdbc:mysql:///mydb1"/>-->
+    <!--<property name="username" value="root"/>-->
+    <!--<property name="password" value="root"/>-->
+    <!--</bean>-->
+
+
+    <!--&lt;!&ndash; c3p0连接池 &ndash;&gt;-->
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+    <!--<property name="driverClass" value="com.mysql.jdbc.Driver"/>-->
+    <!--<property name="jdbcUrl" value="jdbc:mysql:///mydb1"/>-->
+    <!--<property name="user" value="root"/>-->
+    <!--<property name="password" value="root"/>-->
+    <!--</bean>-->
+
+
+    <!-- c3p0连接池 外部配置文件引入 -->
+    <!--外来配置文件开关-->
+    <context:property-placeholder location="db.properties"/>
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+
+    <!--jdbcTemplate对象-->
+
+
+    <!--<bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">-->
+
+        <!--&lt;!&ndash;&lt;!&ndash;注入数据源&ndash;&gt;&ndash;&gt;-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
+
+    <!--模拟需求：
+现在数据源的相关参数配置，是测试环境下的。
+现在，要将工程搭建在正式的服务器上，因为测试环境和正式环境的数据库肯定不是一个，所以肯定首先要更改数据源相关的配置。
+缺点：必须手动修改applicationContext.xml文件，容易造成误操作。
+解决方案：不修改。可以将数据源相关配置参数，外置。
+
+
+目的：可以将xml配置中可能要经常修改内容，抽取到一个properties文件
+应用：使用properties文件配置参数，如数据库连接参数等。
+-->
+
+
+    <!--托管bookdao，并进行注入jdbctemplate-->
+    <!--<bean class="com.ithema.spring_16.BookDao" id="bookDao">-->
+        <!--&lt;!&ndash;<property name="jdbcTemplate" ref="jdbcTemplate"/>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash; 方案二：BookDao类继承JdbcDaoSupport，直接注入数据源，就拥有了jdbctempate对象 &ndash;&gt;-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
+
+
+    <!-- 配置dao，注入jdbctemplate -->
+    <bean id="bookDao" class="spring_17.BookDao">
+        <!-- 方案一：在BookDao中提供jdbcTempate属性，通过set方法注入 jdbcTemplate-->
+        <!-- <property name="jdbcTemplate" ref="jdbcTemplate"/> -->
+        <!-- 方案二：BookDao类继承JdbcDaoSupport，直接注入数据源，就拥有了jdbctempate对象 -->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+</beans>

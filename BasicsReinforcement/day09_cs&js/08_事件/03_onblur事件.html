@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        //onblur当元素失去焦点的时候 触发的事件
+        window.onload = function () {
+            var a = document.getElementById("use");
+            a.onblur = function () {
+                var z = a.value;
+                if(!z){
+                    alert("请输入用户名 ：");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<form action="" method="get">
+    用户名：<input type="text" name="user" id="use"/><br/> 商品单价：
+    <input type="submit" value="提交订单"/>
+</form>
+</body>
+
+</html>

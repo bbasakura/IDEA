@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/itcast-parent.iml" filepath="$PROJECT_DIR$/itcast-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatiesCRUDMapper/mybatiesCRUDMapper.iml" filepath="$PROJECT_DIR$/mybatiesCRUDMapper/mybatiesCRUDMapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis03/mybatis03.iml" filepath="$PROJECT_DIR$/mybatis03/mybatis03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspirng_02_proxy/myspirng_02_proxy.iml" filepath="$PROJECT_DIR$/myspirng_02_proxy/myspirng_02_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_01/myspring_01.iml" filepath="$PROJECT_DIR$/myspring_01/myspring_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_02/myspring_02.iml" filepath="$PROJECT_DIR$/myspring_02/myspring_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_02_cglib/myspring_02_cglib.iml" filepath="$PROJECT_DIR$/myspring_02_cglib/myspring_02_cglib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_02_web/myspring_02_web.iml" filepath="$PROJECT_DIR$/myspring_02_web/myspring_02_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_03Aop_annotation/myspring_03Aop_annotation.iml" filepath="$PROJECT_DIR$/myspring_03Aop_annotation/myspring_03Aop_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_03Aop_xml/myspring_03Aop_xml.iml" filepath="$PROJECT_DIR$/myspring_03Aop_xml/myspring_03Aop_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_04_Jdbc/myspring_04_Jdbc.iml" filepath="$PROJECT_DIR$/myspring_04_Jdbc/myspring_04_Jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_04_transaction/myspring_04_transaction (1).iml" filepath="$PROJECT_DIR$/myspring_04_transaction/myspring_04_transaction (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring_04_transaction_anno/myspring_04_transaction (2).iml" filepath="$PROJECT_DIR$/myspring_04_transaction_anno/myspring_04_transaction (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspringmvc_01/myspringmvc_01.iml" filepath="$PROJECT_DIR$/myspringmvc_01/myspringmvc_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspringmvc_02/myspringsvc_02.iml" filepath="$PROJECT_DIR$/myspringmvc_02/myspringsvc_02.iml" />
+    </modules>
+  </component>
+</project>

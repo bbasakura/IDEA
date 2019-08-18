@@ -1,0 +1,8 @@
+
+]squid:S1161!":Add the "@Override" annotation above this method signature(Οϋ©Φϋÿÿÿÿ8ΐ±λ±-
+Hsquid:S1481"*Remove this unused "user1" local variable.(²Τ­ό8σ„§λ±-
+]squid:S2441":Make "User" serializable or don't store it in the session.(δΉÿϋÿÿÿÿ8υ°Έξ±-
+Qsquid:S1161":Add the "@Override" annotation above this method signature(‹¨―Ώ
+Hsquid:S1989""%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8ΐ±λ±-
+\squid:UselessImportCheck"1Remove this unused import 'org.omg.CORBA.Object'.(£ΐ£φ8Ρΐϋκ±-
+Hsquid:S1989""%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8ΐ±λ±-

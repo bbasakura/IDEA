@@ -1,0 +1,10 @@
+
+Hsquid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8―σθ±-
+ƒ"squid:ClassVariableVisibilityCheck"NMake s2 a static final constant or non-public and provide accessors if needed.(Ι­ύ8νΞΖι±-
+Vsquid:S1161":Add the "@Override" annotation above this method signature(Οϋ©Φϋÿÿÿÿ
+Ksquid:S1989"(Add a "try/catch" block for "getWriter".(οτ†ϊÿÿÿÿ8σ¬κ±-
+"squid:ClassVariableVisibilityCheck"NMake s1 a static final constant or non-public and provide accessors if needed.(·ώ«ψÿÿÿÿ8ήΫΕι±-
+Ksquid:S1444"(Make this "public static s1" field final(·ώ«ψÿÿÿÿ8ήΫΕι±-
+Fsquid:S1444"(Make this "public static s2" field final(Ι­ύ8νΞΖι±-
+Qsquid:S1161":Add the "@Override" annotation above this method signature(‹¨―Ώ
+Hsquid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8―σθ±-

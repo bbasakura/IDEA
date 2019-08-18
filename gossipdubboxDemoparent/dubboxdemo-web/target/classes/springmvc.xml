@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+    <!--注解驱动-->
+    <mvc:annotation-driven >
+        <mvc:message-converters register-defaults="false">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- 引用dubbo 服务 -->
+    <!--消费方的项目名称-->
+    <dubbo:application name="dubboxdemo-web" />
+    <!--注册中心的地址-->
+    <dubbo:registry protocol="zookeeper" address="node01:2181,node02:2181,node03:2181"/>
+    <!--包扫描:  扫描带注解的类:  @Controller    @reference -->
+    <dubbo:annotation package="com.itheima.controller" />
+
+</beans>

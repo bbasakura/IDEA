@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress SpringFacetInspection -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- spring构建sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--1/ 指定mybatis的数据源 -->
+        <property name="dataSource" ref="dataSource"></property>
+        <!-- 指定mybatis的全局配置文件 -->
+        <property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"></property>
+        <!--扫描mapper下的所有xml文件-->
+        <property name="mapperLocations" value="classpath:mybatis.mapper/**/*.xml"/>
+
+        <!-- 别名扫描-->
+        <property name="typeAliasesPackage" value="com.itheima.ssm.pojo"/>
+
+   </bean>
+
+
+    <!--mapper的接口扫描-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+
+        <property name="basePackage" value="com.itheima.ssm.mapper"/>
+        
+    </bean>
+
+</beans>

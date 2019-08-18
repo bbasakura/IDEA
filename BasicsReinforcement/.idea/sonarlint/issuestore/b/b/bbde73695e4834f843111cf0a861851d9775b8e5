@@ -1,0 +1,9 @@
+
+Csquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™¢¬¬¬-
+dsquid:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(¤ù»ÿÿÿÿÿ8™¢¬¬¬-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(§Ì‚8™¢¬¬¬-
+ˆsquid:S1598"ëThis file "SellTicket.java" should be located in "com\itheima\ExecuDemo" directory, not in "D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day02çº¿ç¨‹æ± ï¼Œåå°„\src\com.itheima\ExecuDemo"(Do not use dots in directory names).(ıø¯‚8™¢¬¬¬-
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8™¢¬¬¬-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ıø¯‚8™¢¬¬¬-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8™¢¬¬¬-

@@ -1,0 +1,10 @@
+
+Esquid:S1989,"'Add a "try/catch" block for "parseInt".(•â‡š8ª‚ÕÜ³-
+Asquid:S1989H"%Add a "try/catch" block for "doPost".(ã÷éíùÿÿÿÿ
+Bsquid:S1989C"&Add a "try/catch" block for "forward".(’þÐúÿÿÿÿ
+Asquid:S1989H"%Add a "try/catch" block for "doPost".(ã÷éíùÿÿÿÿ
+Bsquid:S1989C"&Add a "try/catch" block for "forward".(’þÐúÿÿÿÿ
+Vsquid:S1161G":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ
+>squid:S1989#"'Add a "try/catch" block for "parseInt".(ß‹Û¿
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(‰å¹«ùÿÿÿÿ
+Qsquid:S1161":Add the "@Override" annotation above this method signature(‹¨¯¿

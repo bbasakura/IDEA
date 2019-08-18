@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="maven_contact:war">
+    <output-path>$PROJECT_DIR$/../../MavenCode/maven_contact/target</output-path>
+    <root id="archive" name="usermanager-maven-2.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="maven_contact:war exploded" />
+    </root>
+  </artifact>
+</component>

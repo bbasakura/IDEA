@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 【需求】将当前的日期按照"yyyy-MM-dd hh:mm:ss"格式输出
+		 */
+		var date = new Date();
+		//调用方法
+		/*
+		*
+		* Date 对象方法
+			方法 		描述
+			getDate() 从 Date 对象返回一个月中的某一天 (1 ~ 31)。
+			getDay() 从 Date 对象返回一周中的某一天 (0 ~ 6)。
+			getMonth() 从 Date 对象返回月份 (0 ~ 11)。
+			getFullYear() 从 Date 对象以四位数字返回年份。
+			getHours() 返回 Date 对象的小时 (0 ~ 23)。
+			getMinutes() 返回 Date 对象的分钟 (0 ~ 59)。
+			getSeconds() 返回 Date 对象的秒数 (0 ~ 59)。
+			getMilliseconds() 返回 Date 对象的毫秒(0 ~ 999)。
+			getTime() 返回 1970 年 1 月 1 日至今的毫秒数。
+		* */
+        var day = date.getDay();
+        console.log("周" + day);
+        var month = date.getMonth();
+        console.log(date.getFullYear()+ "年");
+        console.log((month + 1)+ "月");
+        console.log(date.getDate()+ "日");
+
+	</script>
+</html>

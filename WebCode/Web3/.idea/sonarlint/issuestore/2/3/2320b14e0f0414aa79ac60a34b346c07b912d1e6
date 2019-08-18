@@ -1,0 +1,9 @@
+
+Qsquid:S1161":Add the "@Override" annotation above this method signature(‹¨¯¿
+¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ïû©Öûÿÿÿÿ8–ïÙ™±-
+Ssquid:S1191"5Use classes from the Java API instead of Sun classes.(õ‚ÖÆ8ßãÔ™±-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç‰í›üÿÿÿÿ
+qsquid:UselessImportCheck"FRemove this unused import 'sun.util.resources.en.CurrencyNames_en_MT'.(õ‚ÖÆ8ßãÔ™±-
+Hsquid:S1989"%Add a "try/catch" block for "encode".(…‰ÕÓøÿÿÿÿ8–ïÙ™±-
+]squid:S1161":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ8–ïÙ™±-
+Bsquid:S1989"%Add a "try/catch" block for "encode".(Ä©É8á‚à™±-

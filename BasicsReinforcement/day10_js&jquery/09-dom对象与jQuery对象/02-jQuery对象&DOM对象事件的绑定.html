@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <button id="mybutton">点我</button>
+    <script>
+        //dom js注册时间的方式
+        // document.getElementById("mybutton").onclick = function () {
+        //     alert("点我呵呵");
+        // }
+        //jQuery
+        //onclick --> click(callback)
+        //onblur --> blur(callback);
+        //onsubmit--> submit(callback)
+        //onchange--> change(callback);
+        $("#mybutton").click(function () {
+            alert("点我再呵呵");
+        });
+    </script>
+</body>
+</html>

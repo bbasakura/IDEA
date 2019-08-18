@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/day06_JDBC/src/com/itheima/JDBCDemo02/CrudJDBC.java" line="92" />
+    <bookmark url="file://$PROJECT_DIR$/day09_cs&amp;js/02_css高级/01_行和块相互转换.html" line="31" />
+    <bookmark url="file://$PROJECT_DIR$/day09_cs&amp;js/09_window/02_定时器.html" line="20" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="104ba1a7-34c5-4db5-b899-b2eb49d46ad9" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/BasicsReinforcement$JDBCUtilsTest.coverage" NAME="JDBCUtilsTest Coverage Results" MODIFIED="1558447829234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.itheima.JDBCUtils.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollFromSource" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="XML" />
+        <option value="Python Script" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="HTML_Boot" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>d</find>
+      <find>alt=&quot;&quot;</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/day08_html/css/1.css.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/1.css" />
+        <option value="$PROJECT_DIR$/day08_html/css/cs03外链式.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS和HTML结合方式/cs03外链式.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS基本选择器/元素选择器.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS基本选择器/id选择器.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS基本选择器/Clsaa选择器.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS扩展选择器/层级选择器.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS扩展选择器/组合选择器.html" />
+        <option value="$PROJECT_DIR$/day08_html/css/CSS扩展选择器/属性过滤选择器.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/05_JS和HTML的结合方式/2.js" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/07_函数/01_函数定义.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/09_window/04_全局函数.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/010_location/01_location练习.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/01_css常用样式/01_字体样式.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/01_css常用样式/02_边框和背景.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/02_css高级/01_行和块相互转换.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/03_盒子模型/01_演示盒子模型.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/04_注册案例/01_注册表单.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/05_JS和HTML的结合方式/1.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/05_JS和HTML的结合方式/01_JS与html的结合方式.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/01_变量声明.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/02_JS的数据类型.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/03_运算符.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/04_流程控制语句.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/07_函数/02_匿名函数.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/07_函数/03_函数调用面试题.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/08_事件/01_事件绑定.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/08_事件/02_onload事件.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/08_事件/03_onblur事件.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/08_事件/05_onsubmit事件.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/09_window/02_定时器.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/09_window/03_轮播图案例.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/12_dom/01_获取元素对象.html" />
+        <option value="$PROJECT_DIR$/day09_cs&amp;js/09_window/01_消息框.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/gameballon/ballon.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/gameballon/balloon.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/01_dom概述/01_document对象.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/02_dom获取html标签/01_dom对象获取标签.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/02_dom获取html标签/02_value值操作.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/07_全选，反选，表格隔行变色和动态删除/【案例二】_全选，反选，表格隔行变色和动态删除表格.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/02_dom获取html标签/03_标签体操作.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/03_注册表单校验/【案例一】注册表单校验.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/04_创建和删除标签/01_dom操作创建和删除标签.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/13-案例/01-案例一.html" />
+        <option value="$PROJECT_DIR$/day10_js&amp;jquery/13-案例/03-案例三.html" />
+        <option value="$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/JQ遍历/itar.html" />
+        <option value="$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/JQ插件/01.html" />
+        <option value="$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/BootstrapDemo/案例.HTML" />
+        <option value="$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/BootstrapDemo/01.html" />
+        <option value="$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/BootstrapDemo/02.HTML" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="503" />
+    <option name="y" value="49" />
+    <option name="width" value="845" />
+    <option name="height" value="750" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Compiler issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TrivialIf</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BasicsReinforcement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BasicsReinforcement" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BasicsReinforcement" type="58d84e3e:PackageViewProjectNode" />
+              <item name="day04单表" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="BasicsReinforcement" type="58d84e3e:PackageViewProjectNode" />
+              <item name="day06_JDBC" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="BasicsReinforcement" type="58d84e3e:PackageViewProjectNode" />
+              <item name="day06_JDBC" type="616d4139:PackageViewModuleNode" />
+              <item name="com.itheima" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.itheima.jdbcTemplate" />
+      <recent name="com.itheima.Bean" />
+      <recent name="com.itheima03.BeanUtils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day11-jQuery&amp;Bootstrap" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day11-jQuery&amp;Bootstrap\js" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day11-jQuery&amp;Bootstrap\boot" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day11-jQuery&amp;Bootstrap\img" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day10_js&amp;jquery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day11-jQuery&amp;Bootstrap\BootstrapDemo" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day08_html\css" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day08_html\css\CSS和HTML结合方式" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement" />
+      <recent name="D:\ruanjian\javasfw\workspeace-IDEA\BasicsReinforcement\day03Xml&amp;工具类" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.01_dom操作创建和删除标签.html">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="01_dom操作创建和删除标签.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BasicsReinforcement/day10_js&amp;jquery/04_创建和删除标签/01_dom操作创建和删除标签.html" />
+    <configuration name="01.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BasicsReinforcement/day11-jQuery&amp;Bootstrap/BootstrapDemo/01.html" />
+    <configuration name="01.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BasicsReinforcement/day11-jQuery&amp;Bootstrap/JQ插件/01.html" />
+    <configuration name="02.HTML" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BasicsReinforcement/day11-jQuery&amp;Bootstrap/BootstrapDemo/02.HTML" />
+    <configuration name="【案例一】注册表单校验.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BasicsReinforcement/day10_js&amp;jquery/03_注册表单校验/【案例一】注册表单校验.html" />
+    <configuration name="itar.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BasicsReinforcement/day11-jQuery&amp;Bootstrap/JQ遍历/itar.html" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.01_dom操作创建和删除标签.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.【案例一】注册表单校验.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.itar.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.01.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.01.html (1)" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.01.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.01.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.itar.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.【案例一】注册表单校验.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="104ba1a7-34c5-4db5-b899-b2eb49d46ad9" name="Default" comment="" />
+      <created>1558053406308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558053406308</updated>
+      <workItem from="1558053408832" duration="1326000" />
+      <workItem from="1558054777470" duration="1390000" />
+      <workItem from="1558073604788" duration="122000" />
+      <workItem from="1558073789793" duration="18214000" />
+      <workItem from="1558139225153" duration="4751000" />
+      <workItem from="1558176457367" duration="2326000" />
+      <workItem from="1558408783509" duration="14300000" />
+      <workItem from="1558449628463" duration="959000" />
+      <workItem from="1558450762847" duration="191000" />
+      <workItem from="1558452114679" duration="2791000" />
+      <workItem from="1558485102169" duration="1928000" />
+      <workItem from="1558487801009" duration="13930000" />
+      <workItem from="1558534279702" duration="1711000" />
+      <workItem from="1558574426816" duration="9227000" />
+      <workItem from="1558611955379" duration="9666000" />
+      <workItem from="1558747076271" duration="24938000" />
+      <workItem from="1558834594657" duration="25074000" />
+      <workItem from="1558884169901" duration="3883000" />
+      <workItem from="1558938571082" duration="1095000" />
+      <workItem from="1559039238315" duration="301000" />
+      <workItem from="1559040195168" duration="141000" />
+      <workItem from="1559040595172" duration="2577000" />
+      <workItem from="1559043298359" duration="242000" />
+      <workItem from="1559043895391" duration="8165000" />
+      <workItem from="1559053542381" duration="72000" />
+      <workItem from="1559055093822" duration="183000" />
+      <workItem from="1559055329242" duration="2028000" />
+      <workItem from="1559098214740" duration="1904000" />
+      <workItem from="1559111477784" duration="1483000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="JTDemo_s2 - 2019.05.22 at 21h 13m 54s.xml">
+      <configuration name="JTDemo.s2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s2 - 2019.05.22 at 21h 15m 03s.xml">
+      <configuration name="JTDemo.s2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s2 - 2019.05.22 at 21h 15m 26s.xml">
+      <configuration name="JTDemo.s2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s2 - 2019.05.22 at 21h 25m 59s.xml">
+      <configuration name="JTDemo.s2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s3 - 2019.05.22 at 21h 18m 28s.xml">
+      <configuration name="JTDemo.s3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s4 - 2019.05.22 at 21h 21m 10s.xml">
+      <configuration name="JTDemo.s4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s4 - 2019.05.22 at 21h 22m 32s.xml">
+      <configuration name="JTDemo.s4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s5 - 2019.05.22 at 21h 24m 49s.xml">
+      <configuration name="JTDemo.s5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s6 - 2019.05.22 at 21h 26m 12s.xml">
+      <configuration name="JTDemo.s6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JTDemo_s7 - 2019.05.22 at 21h 29m 10s.xml">
+      <configuration name="JTDemo.s7" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="154918000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Key Promoter X" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18835616" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34353742" sideWeight="0.4969743" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1709531" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3962585" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18707483" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="32" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/05_JS和HTML的结合方式/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/05_JS和HTML的结合方式/2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/05_JS和HTML的结合方式/01_JS与html的结合方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/01_变量声明.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/02_JS的数据类型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/03_运算符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/06_基本语法/04_流程控制语句.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/07_函数/01_函数定义.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day07_JDBC连接池/src/com/itheima/jdbcTemplate/JdbcTempUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/07_函数/02_匿名函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/07_函数/03_函数调用面试题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/08_事件/02_onload事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/08_事件/03_onblur事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/08_事件/04_onchange事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/08_事件/05_onsubmit事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/09_window/02_定时器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#254#290#0" expanded="false" />
+            <element signature="e#436#479#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/08_事件/01_事件绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/09_window/03_轮播图案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/09_window/04_全局函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/010_location/01_location练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/11_history/one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/12_dom/01_获取元素对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/js/first.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09_cs&amp;js/09_window/01_消息框.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/gameballon/balloon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="96" column="9" lean-forward="false" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/07_全选，反选，表格隔行变色和动态删除/【案例二】_全选，反选，表格隔行变色和动态删除表格.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/11-jQuery操作方法/01-html文本&amp;value值的操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/11-jQuery操作方法/02-属性操作attr和prop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/12-jQuery动画效果/01-动画效果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/06_dom属性操作/01_dom属性操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/01_dom概述/01_document对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="9" column="63" lean-forward="false" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/02_dom获取html标签/01_dom对象获取标签.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/02_dom获取html标签/02_value值操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/02_dom获取html标签/03_标签体操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="89" lean-forward="false" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/03_注册表单校验/【案例一】注册表单校验.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/05_父子标签操作/01_父子元素操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/13-案例/01-案例一.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/13-案例/02-案例二.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1696">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/13-案例/03-案例三.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10_js&amp;jquery/04_创建和删除标签/01_dom操作创建和删除标签.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/js/cities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/js/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/JQ遍历/itar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/JQ插件/01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/boot/bootstrap-3.3.7-dist/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="5" column="2047" lean-forward="true" selection-start-line="5" selection-start-column="2047" selection-end-line="5" selection-end-column="2047" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/js/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/BootstrapDemo/案例.HTML">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/BootstrapDemo/01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-jQuery&amp;Bootstrap/BootstrapDemo/02.HTML">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>day03注解，XML</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

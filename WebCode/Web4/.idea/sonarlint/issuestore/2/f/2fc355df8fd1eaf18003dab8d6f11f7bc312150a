@@ -1,0 +1,7 @@
+
+bsquid:UselessImportCheck	"7Remove this unused import 'java.io.OutputStreamWriter'.(“Έ8θ‹Αθ±-
+Hsquid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8θ‹Αθ±-
+Ksquid:S1989"(Add a "try/catch" block for "getWriter".(οτ†ϊÿÿÿÿ8θ‹Αθ±-
+]squid:S1161":Add the "@Override" annotation above this method signature(Οϋ©Φϋÿÿÿÿ8θ‹Αθ±-
+Hsquid:S1989"%Add a "try/catch" block for "doPost".(γχινωÿÿÿÿ8θ‹Αθ±-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(‹¨―Ώ8θ‹Αθ±-

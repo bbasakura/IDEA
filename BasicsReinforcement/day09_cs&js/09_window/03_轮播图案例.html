@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var i = 1;
+        setInterval('changeImgSrc()',2000);
+        function changeImgSrc(){
+            //控制次数,如果大于3次则重新从1开始
+            i++;
+            if(i>3){
+                i = 1;
+            }
+            //改变图片地址
+            document.getElementById("img").src = "../img/"+i+".jpg";
+        }
+    </script>
+</head>
+<body>
+<div>
+    <img width="100%" id="img" src="../img/1.jpg"/>
+</div>
+</body>
+</html>

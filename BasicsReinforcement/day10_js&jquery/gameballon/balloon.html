@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>balloon</title>
+    <style>
+        <!--边框-->
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /*背景颜色*/
+        body {
+            overflow: hidden;
+            background-color: #ccc;
+        }
+        /*创建气球对象， 涉及到羽化，圆角，阴影等*/
+        .balloon {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background-color: #faf9f9;
+            /*圆角*/
+            border-radius: 160px 160px 64px 160px;
+            /*旋转45度*/
+            transform: rotate(45deg);
+            /*盒子阴影*/
+            box-shadow: -8px -8px 80px -8px #873940 inset;
+        }
+        /*气球的小尾巴，after今天学的*/
+        .balloon:after {
+            position: absolute;
+            /*content: "weiyuansu ";*/
+            content: '';
+            bottom: 0px;
+            right: 0px;
+            display: block;
+            border: 8px solid transparent;
+            border-right-color: #873940;
+            transform: rotate(45deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<script>
+    <!--初始化变量值-->
+    var num = 10,
+        bz = 160,
+        ww = window.innerWidth,
+        wh = window.innerHeight,
+        //循环定时
+        timer,
+        balloons = [];//气球数组
+    // 创建节点
+    init();
+    //气球移动
+    // move();
+    // clearInterval(timer);
+    timer = setInterval(move, 40);
+    //浏览器频率60帧率，所以最大是1000/60?,
+    //传递参数不要双引号的？？变量名时，不用，方法加（）时，需要。
+    //监听所有的点击事件
+    document.body.addEventListener('click', function (e) {
+        // event事件对象
+        if (e.target.className === 'balloon') {
+            // e.target.parentNode.removeChild(e.target);
+            //call函数执行的时候e.target替换掉boom中的this.
+            boom.call(e.target,function () {
+                this.parentNode.removeChild(this);
+            }.bind(e.target));
+        }
+    }, false);
+
+    //气球爆炸的动画
+    function boom(cb) {
+        this.timer = setInterval(function () {
+            if(this.offsetWidth<10){
+                //清楚定时器
+                clearInterval(this.timer)
+                //删除节点
+                cb&&cb();//回调函数 ------函数cb,存在并且cb执行；
+            }
+            this.speed++;
+            this.style.width = this.offsetWidth - 10 + 'px';
+            this.style.height = this.offsetHeight - 10 + 'px';
+        }.bind(this),(1000/60));//bind绑定this对象
+    }
+    // 向上移动
+    function move() {
+        var abls = document.querySelectorAll(".balloon");//气球集合
+        for (var i = 0, len = abls.length; i < len; i++) {
+            abls[i].style.top = abls[i].offsetTop - 8 + 'px';
+            // if (abls[i].style.top<-300){
+            //     abls[i].offsettop =465;
+            // }
+        }
+    };
+// 初始化函数
+    function init() {
+        // 用文档片段 节省资源
+        var fragment = document.createDocumentFragment();//文档片段
+        for (var i = 0; i < num; i++) {//for if 中没有块级作用域，外面能拿到
+            var ranx = Math.floor(Math.random() * ww) - bz;//限制左边界
+            ranx = Math.max(0, ranx);//限制右边界（保全整个气球）
+            var bl = document.createElement('div');
+            bl.className = 'balloon';//添加类名
+            bl.style.top = wh - bz + 'px';
+            bl.style.left = ranx + 'px';
+            balloons.push(bl);
+            fragment.appendChild(bl);//添加到body中
+        }
+
+        document.body.appendChild(fragment);
+
+    };
+
+</script>
+<div class="balloon"></div>
+</body>
+</html>

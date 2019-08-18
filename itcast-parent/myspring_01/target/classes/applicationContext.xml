@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--工厂接管UserD类-->
+    <bean id="userDaoImp" class="com.itheima.spring_01.UserDaoImp"/>
+
+    <!--工厂接管USerservice类-->
+    <bean id="userServiceImp" class="com.itheima.spring_01.UserServiceImp">
+        <!--DI 注入
+        注入之前在依赖方定义被依赖类的对象，并提供此对象的setter方法。
+        property中的name 就是setter方法中set之后的后缀小写
+        ref就是要引用的Bean对象的id/name。。
+        -->
+        <property name="iuSerDao" ref="userDaoImp"/>
+    </bean>
+
+
+    <!--获取Bean对象的两种方法
+           通过id，
+           通过。class
+    -->
+
+
+    <!--实例化Bean的四种方式-->
+
+    <!--1、无参构造（最常用）-->
+    <bean id="bean1" class="com.itheima.spring_02.Bean1"/>
+
+    <!--静态工厂方法-->
+    <bean id="bean2" class="com.itheima.spring_02.Bean2Factory" factory-method="getBean2"/>
+
+
+    <!--实例工厂方法-->
+    <bean id="bean3Factory" class="com.itheima.spring_02.Bean3Factory"/>
+    <bean id="bean3" factory-bean="bean3Factory" factory-method="getBean3"/>
+
+    <!--第四种方式: FactoryBean方式:-->
+    <!--spring在实例化对象的时候回判断是否该对象实现了FactoryBean接口,如果实现了就直接调用getObject()方法,并返回执行结果-->
+    <!--&lt;!&ndash;<bean id="bean4" class="com.itheima.spring_02.Bean4Factory/>&ndash;&gt;  会报错-->
+
+
+    <!--Bean对象属性的依赖注入（给对象的属性赋值）-->
+    <bean id="lifeCycleBean" class="com.itheima.spring_03.LifeCycleBean" init-method="init" destroy-method="destroy"/>
+
+    <bean id="car" class="com.itheima.spring_04.Car">
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg name="name" value="奥迪"/>
+        <constructor-arg type="java.lang.Double" value="123466d"/>
+    </bean>
+
+
+    <!--BEan对象的Setter方法赋值   调用默认构造器，相当于new Person() -->
+
+    <!-- 对于ID来说，一个空格都不能多，假如多了一个空格，报错如下：No bean named 'person' available-->
+    <bean id="person" class="com.itheima.spring_04.Person">
+        <property name="id" value="1"/>
+        <property name="name" value="1212"/>
+        <property name="car" ref="car"/>
+    </bean>
+    <bean id="person2" class="com.itheima.spring_04.Person" p:id="1002" p:name="关羽" p:car-ref="car"/>
+    <bean id="person3" class="com.itheima.spring_04.Person" p:id="#{2}" p:name="#{person2.name.toUpperCase()}" p:car="#{car}"/>
+
+</beans>

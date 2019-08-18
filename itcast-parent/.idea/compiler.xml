@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mpsringsvc_01" />
+        <module name="mybatiesCRUDMapper" />
+        <module name="mybatis03" />
+        <module name="myspirng_02_proxy" />
+        <module name="myspring_01" />
+        <module name="myspring_02" />
+        <module name="myspring_02_cglib" />
+        <module name="myspring_02_web" />
+        <module name="myspring_03Aop_annotation" />
+        <module name="myspring_03Aop_xml" />
+        <module name="myspring_04_Jdbc" />
+        <module name="myspring_04_transaction (1)" />
+        <module name="myspring_04_transaction (2)" />
+        <module name="myspringmvc_01" />
+        <module name="myspringmvc_02" />
+        <module name="myspringsvc_02" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aaaa" target="1.7" />
+      <module name="hhhhh" target="1.7" />
+      <module name="itcast-parent" target="1.7" />
+      <module name="mpsringsvc_01" target="1.7" />
+      <module name="mybatiesCRUDMapper" target="1.7" />
+      <module name="mybatis03" target="1.7" />
+      <module name="myspirng_02_proxy" target="1.7" />
+      <module name="myspring_01" target="1.7" />
+      <module name="myspring_02" target="1.7" />
+      <module name="myspring_02_cglib" target="1.7" />
+      <module name="myspring_02_web" target="1.7" />
+      <module name="myspring_03Aop_annotation" target="1.7" />
+      <module name="myspring_03Aop_xml" target="1.7" />
+      <module name="myspring_04_Jdbc" target="1.7" />
+      <module name="myspring_04_transaction" target="1.7" />
+      <module name="myspring_04_transaction (1)" target="1.7" />
+      <module name="myspring_04_transaction (2)" target="1.7" />
+      <module name="myspringmvc_01" target="1.7" />
+      <module name="myspringmvc_02" target="1.7" />
+      <module name="myspringsvc_02" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
