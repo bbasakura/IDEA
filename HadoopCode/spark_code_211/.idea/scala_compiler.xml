@@ -7,6 +7,6 @@
         <parameter value="D:\DevelopSofeware\CodeSpace\workspeace-IDEA\HadoopCode\spark_code_211\spark_day01\target/.scala_dependencies" />
       </parameters>
     </profile>
-    <profile name="Maven 2" modules="spark_day03,spark_day02,spark_day04" />
+    <profile name="Maven 2" modules="spark_day05,spark_day03,spark_day02,spark_day04" />
   </component>
 </project>

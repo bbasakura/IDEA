@@ -10,6 +10,7 @@
         <module name="spark_day02" />
         <module name="spark_day03" />
         <module name="spark_day04" />
+        <module name="spark_day05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="spark_day02" target="1.8" />
       <module name="spark_day03" target="1.8" />
       <module name="spark_day04" target="1.8" />
+      <module name="spark_day05" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
