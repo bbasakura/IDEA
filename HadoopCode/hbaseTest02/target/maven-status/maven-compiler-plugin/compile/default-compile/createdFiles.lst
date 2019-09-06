@@ -1,9 +1,0 @@
-com\ithaima\hbase\Hdfs2Hbase$HBaseReducer.class
-com\ithaima\hbase\HBaseLoad$LoadMapper.class
-com\ithaima\hbase\HbaseMR.class
-com\ithaima\hbase\HBaseLoad.class
-com\ithaima\hbase\Hdfs2Hbase.class
-com\ithaima\hbase\LoadData.class
-com\ithaima\hbase\HbaseMR$HBaseReducer.class
-com\ithaima\hbase\HbaseMR$HBaseMapper.class
-com\ithaima\hbase\Hdfs2Hbase$HdfsMapper.class
