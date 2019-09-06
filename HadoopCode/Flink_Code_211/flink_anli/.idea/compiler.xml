@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flink_anli" />
+        <module name="report" />
+        <module name="stream" />
+        <module name="sync-db" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="flink_anli" target="1.5" />
+      <module name="pyg-0904" target="1.5" />
+      <module name="report" target="1.5" />
+      <module name="stream" target="1.5" />
+      <module name="sync-db" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
