@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:hdp="http://www.springframework.org/schema/hadoop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+        	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+
+
+        	http://www.springframework.org/schema/hadoop http://www.springframework.org/schema/hadoop/spring-hadoop-2.0.xsd">
+     <!--配置包扫描 -->  
+    <context:component-scan base-package="cn.itcast.controller,cn.itcast.service,cn.itcast.dao"></context:component-scan>
+    <!-- 引入hbase-site.xml配置文件	 -->
+    <hdp:configuration resources="classpath:hbase-site.xml" />
+    <!-- hbase的默认配置，对应默认生成的bean为hbaseConfiguration -->
+    <hdp:hbase-configuration configuration-ref="hbaseConfiguration" />
+
+     <bean id="hbaseConfiguration" class="org.apache.hadoop.hbase.HBaseConfiguration"></bean>
+  	<!-- 选择jdbc模板 -->
+    <bean id="phoenixJdbcTemplate"
+          class="org.springframework.jdbc.core.JdbcTemplate">
+          <property name="dataSource" ref="phoenixDataSource"></property>
+    </bean>
+
+    <!-- 配置Phoenix数据源 -->
+    <bean id="phoenixDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="org.apache.phoenix.jdbc.PhoenixDriver"/>
+        <property name="url" value="jdbc:phoenix:hadoop01,hadoop02,hadoop03:2181"/>
+        <property name="username" value="hpsk"/>
+        <property name="password" value="hpsk"/>
+        <property name="initialSize" value="20"/>
+        <property name="maxActive" value="0"/>
+        <!--因为Phoenix进行数据更改时不会自动的commit,必须要添加defaultAutoCommit属性,否则会导致数据无法提交的情况-->
+        <property name="defaultAutoCommit" value="true"/>
+    </bean>
+
+</beans>
