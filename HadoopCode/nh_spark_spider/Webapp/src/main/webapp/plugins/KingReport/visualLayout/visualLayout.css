@@ -1,0 +1,70 @@
+/*拖拽样式处理,请使用!important进行覆盖*/
+.VLdragProxy{
+	overflow:hidden;
+}
+/*主要样式*/
+.visualLayout {
+	overflow:hidden;
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box ; /* Safari */
+	
+}
+/*可调整大小边线样式 #FF00FF*/
+.visualLayout .resizableBorderbottom {
+	border-bottom: 2px solid white !important;
+}
+.visualLayout .resizableBorderright {
+	border-right: 2px solid white !important;
+} 
+/*拖拽临时：拖拽摆放临时样式*/
+.visualLayout .VL_LayoutTemp {
+
+}
+/*拖拽鼠标悬停样式*/
+.visualLayout .VL_Hover{
+	background: #FBEC88;
+}
+/*布局内容样式*/
+.visualLayout .VL_Context{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+}
+/*布局标题样式*/
+.visualLayout .VL_title{
+	position: absolute;
+	width: 100%;
+	height:25px;
+	float: left;
+	top:0px;
+	left:0px;
+}
+
+/*标题移动按钮样式*/
+.visualLayout .VL_title .title-move{
+	position: absolute;
+	width: 20px;
+	height: 17px;
+	top: 1px;
+	background: url('mouseMove.png')
+		no-repeat right center;
+	right: 1px !important;
+	float: left;
+	left: 1px;
+}
+/*标题关闭按钮样式*/
+.visualLayout .VL_title .title-close{
+	height: 17px;
+	 top : 1px;
+	float: right;
+	position: absolute;
+	width: 20px;
+	height: 17px;
+	cursor: pointer;
+	background: url('close.png') no-repeat right
+		center;
+	right: 1px;
+}

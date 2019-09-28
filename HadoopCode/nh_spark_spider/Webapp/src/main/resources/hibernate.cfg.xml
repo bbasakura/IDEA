@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- 用于反向生成类文件的配置，与项目启动时使用的数据库连接无关 -->
+<hibernate-configuration>
+
+    <session-factory>
+    	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://172.17.0.63:3306/kingnh</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">123456q</property>
+    </session-factory>
+
+</hibernate-configuration>

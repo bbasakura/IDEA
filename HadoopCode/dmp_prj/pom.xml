@@ -11,6 +11,7 @@
     <modules>
         <module>dmp_spark</module>
         <module>dmp_impala</module>
+        <module>dmp_project</module>
     </modules>
 
 

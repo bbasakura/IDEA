@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WebProj:war">
+    <output-path>$PROJECT_DIR$/WebProj/target</output-path>
+    <root id="archive" name="gciantispider_web-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="WebProj:war exploded" />
+    </root>
+  </artifact>
+</component>

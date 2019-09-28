@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dmp_impala" />
+        <module name="dmp_project" />
         <module name="dmp_spark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dmp_impala" target="1.5" />
       <module name="dmp_prj" target="1.5" />
+      <module name="dmp_project" target="1.8" />
       <module name="dmp_spark" target="1.8" />
     </bytecodeTargetLevel>
   </component>

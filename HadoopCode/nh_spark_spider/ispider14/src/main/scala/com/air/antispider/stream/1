@@ -1,0 +1,92 @@
+24/Sep/2019:08:41:41 +0800
+POST /B2C40/dist/main/images/loadingimg.jpg HTTP/1.1
+POST
+application/x-www-form-urlencoded; charset=UTF-8
+json=%7B%22depcity%22%3A%22CAN%22%2C+%22arrcity%22%3A%22WUH%22%2C+%22flightdate%22%3A%2220180220%22%2C+%22adultnum%22%3A%221%22%2C+%22childnum%22%3A%220%22%2C+%22infantnum%22%3A%220%22%2C+%22cabinorder%22%3A%220%22%2C+%22airline%22%3A%221%22%2C+%22flytype%22%3A%220%22%2C+%22international%22%3A%220%22%2C+%22action%22%3A%220%22%2C+%22segtype%22%3A%221%22%2C+%22cache%22%3A%220%22%2C+%22preUrl%22%3A%22%22%2C+%22isMember%22%3A%22%22%7D
+http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2018-02-20&at=1&ct=0&it=0
+192.168.80.1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2019-09-24T08:41:41+08:00
+192.168.80.81
+JSESSIONID=782121159357B98CA6112554CF44321E; sid=b5cc11e02e154ac5b0f3609332f86803; aid=8ae8768760927e280160bb348bef3e12; identifyStatus=N; userType4logCookie=M; userId4logCookie=13818791413; useridCookie=13818791413; userCodeCookie=13818791413; temp_zh=cou%3D0%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2018-01-13%3B%E5%B9%BF%E5%B7%9E-%E5%8C%97%E4%BA%AC%3B1%2C0%2C0%3B%26cou%3D1%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2018-01-17%3B%E5%B9%BF%E5%B7%9E-%E6%88%90%E9%83%BD%3B1%2C0%2C0%3B%26; JSESSIONID=782121159357B98CA6112554CF44321E; WT-FPC=id=211.103.142.26-608782688.30635197:lv=1516170718655:ss=1516170709449:fs=1513243317440:pn=2:vn=10; language=zh_CN; WT.al_flight=WT.al_hctype(S)%3AWT.al_adultnum(1)%3AWT.al_childnum(0)%3AWT.al_infantnum(0)%3AWT.al_orgcity1(CAN)%3AWT.al_dstcity1(CTU)%3AWT.al_orgdate1(2018-01-17)
+42
+
+
+24/Sep/2019:08:41:41 +0800
+POST /B2C40/query/jaxb/direct/query.ao HTTP/1.1
+POST
+application/x-www-form-urlencoded; charset=UTF-8
+json=%7B%22depcity%22%3A%22CAN%22%2C+%22arrcity%22%3A%22WUH%22%2C+%22flightdate%22%3A%2220180220%22%2C+%22adultnum%22%3A%221%22%2C+%22childnum%22%3A%220%22%2C+%22infantnum%22%3A%220%22%2C+%22cabinorder%22%3A%220%22%2C+%22airline%22%3A%221%22%2C+%22flytype%22%3A%220%22%2C+%22international%22%3A%220%22%2C+%22action%22%3A%220%22%2C+%22segtype%22%3A%221%22%2C+%22cache%22%3A%220%22%2C+%22preUrl%22%3A%22%22%2C+%22isMember%22%3A%22%22%7D
+http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-24&at=1&ct=0&it=0
+192.168.80.1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2019-09-24T08:41:41+08:00
+192.168.80.81
+JSESSIONID=782121159357B98CA6112554CF44321E; sid=b5cc11e02e154ac5b0f3609332f86803; aid=8ae8768760927e280160bb348bef3e12; identifyStatus=N; userType4logCookie=M; userId4logCookie=13818791413; useridCookie=13818791413; userCodeCookie=13818791413; temp_zh=cou%3D0%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2018-01-13%3B%E5%B9%BF%E5%B7%9E-%E5%8C%97%E4%BA%AC%3B1%2C0%2C0%3B%26cou%3D1%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2019-09-24%3B%E5%B9%BF%E5%B7%9E-%E6%88%90%E9%83%BD%3B1%2C0%2C0%3B%26; JSESSIONID=782121159357B98CA6112554CF44321E; WT-FPC=id=211.103.142.26-608782688.30635197:lv=1516170718655:ss=1516170709449:fs=1513243317440:pn=2:vn=10; language=zh_CN; WT.al_flight=WT.al_hctype(S)%3AWT.al_adultnum(1)%3AWT.al_childnum(0)%3AWT.al_infantnum(0)%3AWT.al_orgcity1(CAN)%3AWT.al_dstcity1(CTU)%3AWT.al_orgdate1(2019-09-24)
+43
+
+
+24/Sep/2019:12:05:51 +0800
+POST /B2C40/query/jaxb/direct/query.ao HTTP/1.1
+POST
+application/x-www-form-urlencoded; charset=UTF-8
+json=%7B%22depcity%22%3A%22CAN%22%2C+%22arrcity%22%3A%22WUH%22%2C+%22flightdate%22%3A%2220180220%22%2C+%22adultnum%22%3A%221%22%2C+%22childnum%22%3A%220%22%2C+%22infantnum%22%3A%220%22%2C+%22cabinorder%22%3A%220%22%2C+%22airline%22%3A%221%22%2C+%22flytype%22%3A%220%22%2C+%22international%22%3A%220%22%2C+%22action%22%3A%220%22%2C+%22segtype%22%3A%221%22%2C+%22cache%22%3A%220%22%2C+%22preUrl%22%3A%22%22%2C+%22isMember%22%3A%22%22%7D
+http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-24&at=1&ct=0&it=0
+192.168.80.1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2019-09-24T12:05:51+08:00
+192.168.80.81
+JSESSIONID=782121159357B98CA6112554CF44321E; sid=b5cc11e02e154ac5b0f3609332f86803; aid=8ae8768760927e280160bb348bef3e12; identifyStatus=N; userType4logCookie=M; userId4logCookie=D1279C812D20ABDB6612BA7AF1C5D13C; useridCookie=D1279C812D20ABDB6612BA7AF1C5D13C; userCodeCookie=D1279C812D20ABDB6612BA7AF1C5D13C; temp_zh=cou%3D0%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2018-01-13%3B%E5%B9%BF%E5%B7%9E-%E5%8C%97%E4%BA%AC%3B1%2C0%2C0%3B%26cou%3D1%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2019-09-24%3B%E5%B9%BF%E5%B7%9E-%E6%88%90%E9%83%BD%3B1%2C0%2C0%3B%26; JSESSIONID=782121159357B98CA6112554CF44321E; WT-FPC=id=211.103.142.26-608782688.30635197:lv=44FB8D64B45D1F06DF48D421892806D555:ss=AC3B8894DD14638395642766B8567C1B49:fs=799D29BBE5F65833A680E558571E00FE40:pn=2:vn=10; language=zh_CN; WT.al_flight=WT.al_hctype(S)%3AWT.al_adultnum(1)%3AWT.al_childnum(0)%3AWT.al_infantnum(0)%3AWT.al_orgcity1(CAN)%3AWT.al_dstcity1(CTU)%3AWT.al_orgdate1(2019-09-24)
+105
+
+
+24/Sep/2019:12:05:51 +0800
+POST /B2C40/query/jaxb/direct/query.ao HTTP/1.1
+POST
+application/x-www-form-urlencoded; charset=UTF-8
+json=%7B%22depcity%22%3A%22CAN%22%2C+%22arrcity%22%3A%22WUH%22%2C+%22flightdate%22%3A%2220180220%22%2C+%22adultnum%22%3A%221%22%2C+%22childnum%22%3A%220%22%2C+%22infantnum%22%3A%220%22%2C+%22cabinorder%22%3A%220%22%2C+%22airline%22%3A%221%22%2C+%22flytype%22%3A%220%22%2C+%22international%22%3A%220%22%2C+%22action%22%3A%220%22%2C+%22segtype%22%3A%221%22%2C+%22cache%22%3A%220%22%2C+%22preUrl%22%3A%22%22%2C+%22isMember%22%3A%22%22%7D
+http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-24&at=1&ct=0&it=0
+192.168.80.1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2019-09-24T12:05:51+08:00
+192.168.80.81
+JSESSIONID=782121159357B98CA6112554CF44321E; sid=b5cc11e02e154ac5b0f3609332f86803; aid=8ae8768760927e280160bb348bef3e12; identifyStatus=N; userType4logCookie=M; userId4logCookie=D1279C812D20ABDB6612BA7AF1C5D13C; useridCookie=D1279C812D20ABDB6612BA7AF1C5D13C; userCodeCookie=D1279C812D20ABDB6612BA7AF1C5D13C; temp_zh=cou%3D0%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2018-01-13%3B%E5%B9%BF%E5%B7%9E-%E5%8C%97%E4%BA%AC%3B1%2C0%2C0%3B%26cou%3D1%3Bsegt%3D%E5%8D%95%E7%A8%8B%3Btime%3D2019-09-24%3B%E5%B9%BF%E5%B7%9E-%E6%88%90%E9%83%BD%3B1%2C0%2C0%3B%26; JSESSIONID=782121159357B98CA6112554CF44321E; WT-FPC=id=211.103.142.26-608782688.30635197:lv=44FB8D64B45D1F06DF48D421892806D555:ss=AC3B8894DD14638395642766B8567C1B49:fs=799D29BBE5F65833A680E558571E00FE40:pn=2:vn=10; language=zh_CN; WT.al_flight=WT.al_hctype(S)%3AWT.al_adultnum(1)%3AWT.al_childnum(0)%3AWT.al_infantnum(0)%3AWT.al_orgcity1(CAN)%3AWT.al_dstcity1(CTU)%3AWT.al_orgdate1(2019-09-24)
+111
+
+
+单程
+https://b2c.csair.com/B2C40/newTrips/static/main/page/booking/index.html?t=S&c1=CTU&c2=SHA&d1=2019-09-25&at=1&ct=0&it=0
+往返
+https://b2c.csair.com/B2C40/newTrips/static/main/page/booking/index.html?t=R&c1=CTU&c2=SHA&d1=2019-10-08&d2=2019-11-14&at=1&ct=0&it=0
+
+
+
+
+ProcessedData(原始数据,POST,/B2C40/query/jaxb/direct/query.ao,192.168.80.1,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36,2019-09-26T11:43:38+08:00,192.168.80.81,false,RequestType(National,Query),OneWay,CoreRequestParams(20180220,CAN,WUH),782121159357B98CA6112554CF44321E,D1279C812D20ABDB6612BA7AF1C5D13C,Some(com.air.antispider.stream.common.bean.QueryRequestData@4c3a2746),Some(com.air.antispider.stream.common.bean.BookRequestData@3a3c495c),http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-26&at=1&ct=0&it=0)
+ProcessedData(,POST,/B2C40/query/jaxb/direct/query.ao,192.168.80.1,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36,2019-09-26T11:43:39+08:00,192.168.80.81,false,RequestType(National,Query),OneWay,CoreRequestParams(20180220,CAN,WUH),782121159357B98CA6112554CF44321E,D1279C812D20ABDB6612BA7AF1C5D13C,Some(com.air.antispider.stream.common.bean.QueryRequestData@72f7855c),Some(com.air.antispider.stream.common.bean.BookRequestData@30d8a308),http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-26&at=1&ct=0&it=0)
+
+
+
+
+NULL#CS#POST#CS#/B2C40/query/jaxb/direct/query.ao#CS#192.168.80.1#CS#Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36#CS#2019-09-26T15:02:28+08:00#CS#192.168.80.81#CS#false#CS#National#CS#Query#CS#OneWay#CS#20180220#CS#CAN#CS#WUH#CS#782121159357B98CA6112554CF44321E#CS#D1279C812D20ABDB6612BA7AF1C5D13C#CS#{"isEmpty":false,"flightType":0,"queryTime":"","queryUserId":"","queryUnUserId":"","queryIp":"","depCity":"CAN","arrCity":"WUH","flightDate":"20180220","adultNum":"1","childNum":"0","infantNum":"0","country":"","travelType":0}#CS#{"flightType":-1,"travelType":-1,"bookTime":"","bookUserId":"","bookUnUserId":"","bookIp":"","psgName":[],"psgType":[],"idType":[],"idCard":[],"contractName":"","contractPhone":"D41D8CD98F00B204E9800998ECF8427E","bookAgent":"","depCity":[],"arrCity":[],"flightDate":[],"flightNo":[],"cabin":[]}#CS#http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-26&at=1&ct=0&it=0
+NULL#CS#POST#CS#/B2C40/query/jaxb/direct/query.ao#CS#192.168.80.1#CS#Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36#CS#2019-09-26T15:02:28+08:00#CS#192.168.80.81#CS#false#CS#National#CS#Query#CS#OneWay#CS#20180220#CS#CAN#CS#WUH#CS#782121159357B98CA6112554CF44321E#CS#D1279C812D20ABDB6612BA7AF1C5D13C#CS#{"isEmpty":false,"flightType":0,"queryTime":"","queryUserId":"","queryUnUserId":"","queryIp":"","depCity":"CAN","arrCity":"WUH","flightDate":"20180220","adultNum":"1","childNum":"0","infantNum":"0","country":"","travelType":0}#CS#{"flightType":-1,"travelType":-1,"bookTime":"","bookUserId":"","bookUnUserId":"","bookIp":"","psgName":[],"psgType":[],"idType":[],"idCard":[],"contractName":"","contractPhone":"D41D8CD98F00B204E9800998ECF8427E","bookAgent":"","depCity":[],"arrCity":[],"flightDate":[],"flightNo":[],"cabin":[]}#CS#http://b2c.csair.com/B2C40/modules/bookingnew/main/flightSelectDirect.html?t=S&c1=CAN&c2=WUH&d1=2019-09-26&at=1&ct=0&it=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

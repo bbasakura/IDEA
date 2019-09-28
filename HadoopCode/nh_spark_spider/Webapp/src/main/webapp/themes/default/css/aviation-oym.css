@@ -1,0 +1,1411 @@
+body {
+	background-color: #eff4f8;
+}
+input {
+	outline: none;
+}
+select {
+	outline: none !important;
+}
+.modal .modal-header button.close {
+	outline: none;
+}
+.modal .modal-footer button.btn {
+	outline: none;
+}
+textarea {
+	outline: none;
+}
+/*弹窗按钮公共样式*/
+.modal .modal-footer .btn {
+	width: 117px;
+	height: 36px;
+	border-radius: 20px;
+	outline: none;
+}
+.modal .modal-footer .btn-primary {
+	background: #5cbce4;
+	border-color: #5cbce4;
+}
+.modal .modal-footer {
+	padding: 12px 0 24px 0;
+	text-align: center;
+	border-top: none;
+	font-size: 0;
+}
+.modal .modal-footer .btn.btn-default {
+	background: #e3e8ec;
+	border-color: #e3e8ec;
+}
+.modal .modal-footer .btn-primary {
+	background: #5cbce4;
+	border-color: #5cbce4;
+}
+.modal .modal-footer .btn-primary:active {
+	background: #5cbce4;
+	border-color: #5cbce4;
+}
+.modal .modal-footer .btn+.btn {
+	margin-left: 15px;
+}
+/*数据采集*/
+.dataCollect {
+	margin: 20px;
+	background-color: #fff;
+}
+.dataCollect table {
+	margin-bottom: 0;
+	table-layout:fixed;
+	word-wrap:break-word;
+	border: 1px solid #e3e8ec;
+}
+.dataCollect table thead tr th {
+	height: 56px;
+	vertical-align: middle;
+	background-color: #e3e8ec;
+}
+.dataCollect table thead tr th:first-of-type {
+	padding-left: 50px;
+}
+.dataCollect table tbody>tr:nth-of-type(even) {
+	background-color: #f9fafc;
+}
+.dataCollect table tbody tr td {
+	padding: 0 5px;
+	height: 140px;
+	vertical-align: middle;
+}
+.dataCollect table tbody tr td:first-of-type {
+	padding-left: 50px;
+}
+.dataCollect table textarea {
+	padding: 5px;
+	width: 80%;
+	height: 100px;
+	line-height: 20px;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	resize:none;
+	background: #F7F8FC;
+}
+.dataCollect table td p.fontSize {
+	font-size: 0;
+	line-height: 20px;
+}
+.dataCollect table td p.fontSize span {
+	display: inline-block;
+	font-size: 14px;
+}
+.dataCollect table p {
+	margin: 0;
+}
+.dataCollect table td>div {
+	display: inline-block;
+	padding-left: 30px;
+	width: 85%;
+	height: 110px;
+	line-height: 20px;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.dataCollect table td.server-img p {
+	padding-right: 20px;
+}
+.dataCollect table td.operation-img {
+	font-size: 0;
+	text-align: center;
+}
+.dataCollect table td.operation-img img {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+.dataCollect table td .delete {
+	margin-left: 20px;
+}
+.dataCollect-xg .modal-header {
+	padding: 12px 15px;
+	border-bottom: 1px solid #ccc;
+	background: #ccc;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+.dataCollect-xg #myModify .modal-body {
+	padding: 50px 15px;
+}
+.dataCollect-xg .modal-body .dataCollect-modal-body {
+	margin: 0;
+	text-align: center;
+}
+.dataCollect .dataCollect-xg #myModify .dataCollect-modal-body input[type="text"] {
+	width: 300px;
+}
+/*数据处理*/
+.dataHandle {
+	margin: 15px;
+}
+.dataHandle .dataHandle-header {
+	position: relative;
+	height: 56px;
+	background-color: #e3e8ec;
+}
+.dataHandle .dataHandle-header ul {
+	margin: 0;
+	position: absolute;
+	left: 20px;
+	list-style-type: none;
+}
+.dataHandle .dataHandle-header ul li {
+	float: left;
+	padding: 0 35px;
+	height: 56px;
+	line-height: 56px;
+	cursor: pointer;
+	border: 1px solid #e3e8ec;
+	border-top: 2px solid #e3e8ec;
+	border-bottom: none;
+}
+.dataHandle .dataHandle-header ul li p {
+	margin: 0;
+}
+.dataHandle .dataHandle-header ul li.on {
+	height: 57px;
+	background: #fff;
+	color: #0093d0;
+	border: 1px solid #d9d9d9;
+	border-top: 2px solid #0093d0;
+	border-bottom: none;
+}
+.dataHandle .dataHandle-list {
+	margin: 15px 0;
+	height: 25px;
+}
+.dataHandle .dataHandle-list ul {
+	margin: 0;
+	height: 25px;
+	list-style-type: none;
+}
+.dataHandle .dataHandle-list ul li {
+	float: left;
+	padding: 0 30px;
+	height: 25px;
+	line-height: 25px;
+	border-right: 1px solid #ddd;
+}
+.dataHandle .dataHandle-list ul li.on {
+	color: #0093d0;
+}
+.dataHandle .dataHandle-list ul li:last-of-type {
+	border-right: none;
+}
+.dataHandle .dataHandle-list ul li p {
+	margin: 0;
+	height: 25px;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+}
+.dataHandle .dataHandle-list ul li.on p {
+	border-bottom: 2px solid #0093d0;
+}
+.dataHandle .dataHandle-header .input-group {
+	margin-top: 15px;
+	margin-left: 190px;
+}
+.dataHandle .dataHandle-header .input-group span {
+	padding: 0;
+	background: #F7F8FC;
+	border: none;
+}
+.dataHandle .dataHandle-header .input-group input {
+	padding: 5px;
+	width: 300px;
+	border: 1px solid #ddd;
+}
+.dataHandle .dataHandle-content {
+	padding: 30px 0 50px 34px;
+	border: 1px solid #d9d9d9;
+}
+.dataHandle .dataHandle-content-one .form-horizontal div.checkbox label {
+	padding-left: 18px;
+}
+.dataHandle .dataHandle-content-one .form-horizontal div.checkbox.on label {
+	background: url(../images/ico_01.png) no-repeat 0 6px;
+	background-size: 6px 10px;
+}
+.dataHandle .dataHandle-content .checkbox {
+	padding: 0;
+	min-height: 0;
+}
+.dataHandle .dataHandle-content .checkbox.on {
+	color: #0093d0;
+}
+.dataHandle .dataHandle-content .checkbox img {
+	position: relative;
+	top: -2px;
+	margin-right: 10px;
+	width: 6px;
+	height: 10px;
+}
+.dataHandle .dataHandle-content .checkbox label:first-of-type {
+	padding-left: 0;
+	width: 110px;
+	text-align: left;
+	cursor: auto;
+}
+.dataHandle .dataHandle-content .checkbox label:last-of-type {
+	padding-left: 0;
+}
+.dataHandle .dataHandle-content .theFirst {
+	padding-bottom: 15px;
+}
+.dataHandle .dataHandle-content .theFirst label:first-of-type {
+	vertical-align: middle;
+}
+.dataHandle .dataHandle-content .theFirst .input-group-addon {
+	padding: 0;
+	background: #fff;
+	border: none;
+	cursor: auto;
+}
+@media screen and (max-width: 1300px) {
+	.dataHandle .dataHandle-content-two .dataHandle-checkbox-media {
+		margin-left: 30px;
+	}
+	.dataHandle .dataHandle-content-two #formKey {
+		margin-left: 30px;
+	}
+	.dataHandle .dataHandle-content-two #formKey input[type="text"] {
+		width: 250px;
+	}
+	.dataHandle .dataHandle-content .checkbox label input[type="text"] {
+		margin-left: 10px;
+		padding: 0 10px;
+		width: 250px;
+		height: 38px;
+		border: 1px solid #ddd;
+	}
+	.dataHandle .dataHandle-content .dataHandle-content-two .checkbox label select {
+		margin-left: 10px;
+		padding: 0 10px;
+		width: 250px;
+		height: 38px;
+		border: 1px solid #ddd;
+	}
+	.dataHandle .dataHandle-content .theFirst label input[type="text"] {
+		width: 500px;
+	}
+	.dataHandle .dataHandle-content .theFirst.label_input_width label input[type="text"] {
+		width: 250px;
+	}
+}
+@media screen and (min-width:1300px) and (max-width: 1600px) {
+	.dataHandle .dataHandle-content-two .dataHandle-checkbox-media {
+		margin-left: 80px;
+	}
+	.dataHandle .dataHandle-content-two #formKey {
+		margin-left: 80px;
+	}
+	.dataHandle .dataHandle-content-two #formKey input[type="text"] {
+		width: 300px;
+	}
+	.dataHandle .dataHandle-content .checkbox label input[type="text"] {
+		margin-left: 10px;
+		padding: 0 10px;
+		width: 300px;
+		height: 38px;
+		border: 1px solid #ddd;
+	}
+	.dataHandle .dataHandle-content .dataHandle-content-two .checkbox label select {
+		margin-left: 10px;
+		padding: 0 10px;
+		width: 300px;
+		height: 38px;
+		border: 1px solid #ddd;
+	}
+	.dataHandle .dataHandle-content .theFirst label input[type="text"] {
+		width: 500px;
+	}
+	.dataHandle .dataHandle-content .theFirst.label_input_width label input[type="text"] {
+		width: 300px;
+	}
+}
+@media screen and (min-width:1600px) and (max-width:1930px) {
+	.dataHandle .dataHandle-content-two .dataHandle-checkbox-media {
+		margin-left: 100px;
+	}
+	.dataHandle .dataHandle-content-two #formKey {
+		margin-left: 100px;
+	}
+	.dataHandle .dataHandle-content-two #formKey input[type="text"] {
+		width: 400px;
+	}
+	.dataHandle .dataHandle-content .checkbox label input[type="text"] {
+		margin-left: 10px;
+		padding: 0 10px;
+		width: 400px;
+		height: 38px;
+		border: 1px solid #ddd;
+	}
+	.dataHandle .dataHandle-content .dataHandle-content-two .checkbox label select {
+		margin-left: 10px;
+		padding: 0 10px;
+		width: 400px;
+		height: 38px;
+		border: 1px solid #ddd;
+	}
+	.dataHandle .dataHandle-content .theFirst label input[type="text"] {
+		width: 600px;
+	}
+	.dataHandle .dataHandle-content .theFirst.label_input_width label input[type="text"] {
+		width: 400px;
+	}
+}
+.dataHandle .dataHandle-btn {
+	margin: 20px 0 10px 125px;
+	height: 36px;
+	text-align: right;
+}
+.dataHandle .dataHandle-btn button.btn {
+	float: left;
+	margin-right: 25px;
+	width: 146px;
+	height: 36px;
+	border-radius: 20px;
+	outline: none;
+}
+.dataHandle .dataHandle-btn button.btn-primary {
+	background: #5cbce4;
+	border-color: #5cbce4;
+}
+.dataHandle .dataHandle-btn button.btn-default {
+	background: #e3e8ec;
+	border-color: #e3e8ec;
+}
+.dataHandle .dataHandle-content-one {
+	float: left;
+}
+.dataHandle .dataHandle-content-one ul {
+	list-style: none;
+}
+.dataHandle .dataHandle-content-one>ul>li {
+	margin-bottom: 10px;
+}
+.dataHandle .dataHandle-content-one ul p {
+	display: inline-block;
+	margin: 0;
+	padding-left: 20px;
+	background: url(../images/ico-012.png) no-repeat 0 center;
+	background-size: 12px 12px;
+	cursor: pointer;
+}
+.dataHandle .dataHandle-content-one ul p.on {
+	background: url(../images/ico-013.png) no-repeat 0 center;
+}
+.dataHandle .dataHandle-content-one ul p.on+ul{
+	height: 0;
+	overflow: hidden;
+}
+.dataHandle .dataHandle-content-one li>div {
+	display: inline-block;
+	cursor: pointer;
+}
+.dataHandle .dataHandle-content-one li>div.on {
+	color: #0093d0;
+}
+.dataHandle .dataHandle-content-one li ul {
+	margin-left: 40px;
+}
+.dataHandle .dataHandle-content-one li li {
+	margin-top: 10px;
+}
+.dataHandle .dataHandle-content-two {
+	float: left;
+	margin-left: 30px;
+	padding-left: 40px;
+	width:-moz-calc(100% - 70px - 160px);
+	width:-webkit-calc(100% - 70px - 160px);
+	width: calc(100% - 70px - 160px);
+	border-left: 1px solid #e3e8ec;
+}
+.dataHandle .dataHandle-content .dataHandle-content-two .checkbox label {
+	text-align: right;
+}
+.dataHandle .dataHandle-content-two .dataHandle-checkbox {
+	float: left;
+}
+.dataHandle .dataHandle-content-two .dataHandle-checkbox .checkbox {
+	margin-bottom: 10px;
+}
+/*数据可视化*/
+.dataVisualization {
+	margin: 20px;
+	background-color: #fff;
+}
+.dataVisualization .dataVisualization-box {
+	margin: 0 auto;
+}
+.dataVisualization .dataVisualization-box .dataVisualization-nav {
+	position: relative;
+	height: 56px;
+	background-color: #e3e8ec;
+}
+.dataVisualization .dataVisualization-box ul.nav {
+	list-style-type: none;
+	width: 100%;
+}
+.dataVisualization .dataVisualization-box ul.nav li {
+	float: left;
+	padding: 0 35px;
+	height: 56px;
+	line-height: 56px;
+	font-size: 14px;
+	border: 1px solid #e3e8ec;
+	border-top: 2px solid #e3e8ec;
+	border-bottom: none;
+	cursor: pointer;
+}
+.dataVisualization .dataVisualization-box ul.nav li.on {
+	height: 57px;
+	background: #fff;
+	color: #0093d0;
+	border: 1px solid #d9d9d9;
+	border-top: 2px solid #0093d0;
+	border-bottom: none;
+}
+.dataVisualization .dataVisualization-box ul.nav li p {
+	margin: 0;
+}
+.chooseTime {
+	padding: 6px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	/* text-align: center; */
+	color: #333;
+}
+.dataVisualization-box .SubjectBox {
+	padding-top: 20px;
+	border: 1px solid #ddd;
+}
+.dataVisualization-box .SubjectBox .date {
+	text-align: center;
+}
+.dataVisualization-box .SubjectBox .date p {
+	margin: 0;
+	font-size: 0;
+}
+.dataVisualization-box .SubjectBox .date p input {
+	padding: 0 38px 0 10px;
+	width: 142px;
+	height: 38px;
+	font-size: 14px;
+	background: url(../images/ico-002.png) no-repeat 110px center;
+	background-size: 25px 25px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	vertical-align: top;
+	cursor: pointer;
+}
+.dataVisualization-box .SubjectBox .date p samp {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	vertical-align: top;
+}
+.dataVisualization-box .SubjectBox .box-centent {
+	margin-top: 20px;
+}
+.dataVisualization .dataVisualization-width {
+	margin: 0 auto;
+	width: 80%;
+}
+.dataVisualization .dataVisualization-width .box-top {
+	overflow: hidden;
+}
+.dataVisualization .dataVisualization-width .box-top p {
+	margin: 0;
+}
+.dataVisualization .dataVisualization-width .box-top p:first-of-type {
+	margin-left: 25px;
+	float: left;
+}
+.dataVisualization .dataVisualization-width .box-top p:last-of-type {
+	margin-right: 25px;
+	float: right;
+}
+.dataVisualization .dataVisualization-width .box-centent {
+	margin-top: 45px;
+}
+.dataVisualization .dataVisualization-one .box-centent ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+}
+.dataVisualization .dataVisualization-one .box-centent ul li {
+	margin-bottom: 20px;
+	padding: 0 10px;
+	float: left;
+	width: 50%;
+}
+
+.dataVisualization .dataVisualization-one .box-centent ul li>div {
+	margin: 0 auto; 
+	width: 100%;
+	height: 400px;
+	border: 1px solid #ddd;
+}
+.dataVisualization .dataVisualization-one .box-centent .oneBox {
+	margin: 0 0 20px;
+	height: 400px;
+	border-top: 1px solid #ccc;
+}
+.dataVisualization .dataVisualization-one .box-centent .oneBox-one {
+	margin: 0 0 20px;
+	height: 400px;
+}
+.dataVisualization .dataVisualization-one .box-centent .oneBox-two {
+	margin: 0 0 20px;
+	height: 400px;
+	border-top: 1px solid #ccc;
+}
+.dataVisualization .dataVisualization-select li>p {
+	margin: 0;
+	padding-left: 40px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #fafafa;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+.dataVisualization .dataVisualization-select li>p span {
+	color: #333;
+}
+.dataVisualization .dataVisualization-select li>p select {
+	margin-left: 5px;
+	padding: 0 5px;
+	width: 140px;
+	height: 35px;
+	border-radius: 5px;
+}
+.dataVisualization .dataVisualization-one .dataVisualization-select ul li>div {
+	border-top: none;
+}
+.dataVisualization .dataVisualization-two .box-centent>div {
+	margin: 0 10px 60px 10px;
+	height: 354px;
+	border: 1px solid #ddd;
+}
+.dataVisualization .dataVisualization-two div.dataVisualization-table {
+	border: none;
+	margin: 0 0 60px;
+}
+.dataVisualization .dataVisualization-two table {
+	margin: 0 auto;
+	/* width: 700px; */
+	width: 100%;
+	table-layout: fixed;
+	cellpadding: 0;
+	cellspacing: 0;
+}
+.dataVisualization .dataVisualization-two table th {
+	padding-left: 50px;
+	height: 56px;
+	line-height: 56px;
+	text-align: left;
+	background-color: #e3e8ec;
+}
+.dataVisualization .dataVisualization-two table tbody>tr:nth-of-type(even) {
+	background-color: #f9fafb;
+}
+.dataVisualization .dataVisualization-two table td {
+	padding-left: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+.dataVisualization .dataVisualization-two .pagination>li:first-child>a {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.dataVisualization .dataVisualization-two .pagination>li:last-child>a {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.dataVisualization .dataVisualization-two .cx {
+	margin: 0 auto;
+}
+.dataVisualization .dataVisualization-two .footer {
+	float: right;
+}
+.dataVisualization .dataVisualization-two .mr-eps {
+	margin: 20px 0;
+}
+.dataVisualization .dataVisualization-two .pull-left {
+	float: left;
+}
+.dataVisualization .dataVisualization-two .pull-left select {
+	margin-right: 10px;
+	font-size: 13px;
+	line-height: 30px;
+	height: 30px;
+	width: 90px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	/*-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;*/
+	vertical-align: middle;
+}
+.dataVisualization .dataVisualization-two .pagination {
+	margin: 20px 0;
+	float: left;
+	border-left: 0px;
+}
+.pagination li {
+	list-style: none;
+	background: none;
+	width: auto;
+	border: 0px;
+	padding: 0px;
+	float: left;
+}
+.pagination>li>a {
+	margin: 0px;
+	padding: 4px 12px !important;
+	position: relative;
+	color: #666;
+	float: left;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+.dataVisualization .dataVisualization-two .pagination input {
+	float: left;
+	width: 54px;
+	border: 1px solid #ddd;
+	margin-left: 10px;
+	padding-left: 5px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	height: 30px;
+}
+/*流程管理*/
+.process {
+	margin-top: 25px;
+}
+.process .btn-new {
+	margin: 0 auto;
+	width: 156px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #5cbce4;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.process .btn-new p {
+	margin: 0;
+	color: #fff;
+	text-align: center;
+}
+.process .btn-new p span {
+	margin-right: 10px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 25px;
+	background-color: #0193ce;
+	border-radius: 100%;
+	vertical-align: sub;
+}
+.process .table-box {
+	margin-top: 25px;
+}
+.process .table-box table {
+	border-bottom: 1px solid #eff4f8;
+}
+.process table thead>tr {
+	background: #e3e8ec;
+}
+.process table tbody>tr:nth-of-type(odd) {
+	background: #fff;
+}
+.process table tbody>tr:nth-of-type(even) {
+	background: #f9fafc;
+}
+.process .table-box table th {
+	padding-left: 30px;
+	height: 57px;
+	line-height: 57px;
+	text-align: left;
+}
+.process .table-box table td {
+	padding-left: 30px;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+}
+.process .table-box table td button {
+	padding: 0;
+}
+.process .table-box table td button:hover {
+
+}
+.process .table-box table td p {
+	margin: 0;
+}
+.process .table-box table .center {
+	padding-left: 5px;
+	text-align: center;
+}
+.process .table-box table .center img {
+	margin-right: 20px;
+	width: 25px;
+	height: 24px;
+	cursor: pointer;
+}
+.process .table-box table .center img:last-of-type {
+	margin-right: 0;
+}
+/*预览规则模态框*/
+#myPreview table {
+	border-bottom: 1px solid #ddd;
+}
+#myPreview .modal-body {
+	padding: 0 15px 15px 15px;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+#myPreview table th {
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: none;
+}
+#myPreview table td {
+	padding: 11px;
+	font-size: 0;
+	text-align: center;
+}
+#myPreview table td select {
+	height: 24px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#myPreview table td label {
+	font-size: 12px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+}
+#myPreview table td input {
+	height: 24px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#myPreview table td span {
+	font-size: 12px;
+}
+/*运行流程*/
+#myRun .modal-dialog {
+	width: 400px;
+}
+#myRun .modal-header {
+	padding: 12px 15px;
+	border-bottom: 1px solid #ccc;
+	background: #ccc;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+#myRun .modal-body {
+	padding: 50px 15px;
+}
+#myRun .myRun-content {
+	margin: 0;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+}
+#myRun .myRun-content span {
+	margin-right: 10px;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background: url(../images/ico-011.png) no-repeat center;
+	background-size: 27px 27px;
+	vertical-align: bottom;
+}
+#myRun .modal-footer {
+	border-top: 1px solid #ccc;
+}
+
+
+/*修改模态框*/
+#myModify .modal-body {
+	padding: 0;
+}
+#myModify .myModify-content-nav {
+	margin-bottom: 35px;
+	height: 59px;
+	background-color: #e5e5e5;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+#myModify .myModify-nav {
+	margin: 0 60px;
+	font-size: 0;
+	list-style-type: none;
+}
+#myModify .myModify-nav li {
+	display: inline-block;
+	width:-moz-calc(100% / 3);
+	width:-webkit-calc(100% / 3);
+	width: calc(100% / 3);
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	font-size: 14px;
+}
+#myModify .myModify-nav li p {
+	margin: 0;
+	position: relative;
+	height: 5px;
+	text-align: center;
+	background-color: #ccc;
+	color: #fff;
+}
+#myModify .myModify-nav li:first-of-type p {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#myModify .myModify-nav li:last-of-type p {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#myModify .myModify-nav li p span {
+	background-color: #ccc;
+	position: absolute;
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	border-radius: 100%;
+	top: -10px;
+	left:-moz-calc(50% - 12px);
+	left:-webkit-calc(50% - 12px);
+	left: calc(50% - 12px);
+	text-align: center;
+}
+#myModify .myModify-nav li.on {
+	color: #7abd54;
+}
+#myModify .myModify-nav li.on p {
+	background-color: #7abd54;
+	border-radius: 5px;
+}
+#myModify .myModify-nav li.on p span {
+	background-color: #7abd54;
+	color: #fff;
+}
+#myModify .myModify-content-one {
+	margin: 0 20px;
+}
+#myModify .myModify-content-one>p {
+	margin: 0 0 20px;
+}
+#myModify .myModify-content-one>p input {
+	margin-left: 10px;
+	width: 330px;
+	height: 36px;
+}
+#myModify .myModify-one-box {
+	padding: 25px;
+	// max-height: 300px;
+	height: 300px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+}
+#myModify .myModify-one-box p {
+	margin: 0 0 10px;
+}
+#myModify .myModify-one-box p span {
+	color: #fe0000;
+}
+#myModify .form-inline .form-group {
+	display: block;
+}
+#myModify .form-inline .form-group label {
+	margin-bottom: 10px;
+}
+#myModify .form-inline .form-group:last-of-type label {
+	margin-bottom: 0;
+}
+#myModify input[type="checkbox"] {
+	margin: 0;
+	vertical-align: middle;
+	border-radius: 0;
+}
+#myModify input[type="text"] {
+	padding: 0 10px;
+	width: 60px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+#myModify .myModify-nav-li {
+	height: 44px;
+	background-color: #fafafa;
+}
+#myModify .myModify-nav-li ul {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+#myModify .myModify-nav-li ul li {
+	float: left;
+	background: #fafafa;
+}
+#myModify .myModify-nav-li ul li.on {
+	border: 1px solid #ccc;
+	border-bottom: 1px solid transparent;
+	background: #fff;
+}
+#myModify .myModify-nav-li ul li p {
+	margin: 0;
+	padding: 0 25px;
+	height: 44px;
+	line-height: 44px;
+	cursor: pointer;
+}
+#myModify select {
+	padding: 0;
+	width: 60px;
+	height: 30px;
+	border-radius: 4px;
+}
+#myModify select.fr {
+	float: right;
+}
+#myModify .myModify-content-two {
+	margin: 0 20px;
+	padding: 120px 0 0 60px;
+	height: 400px;
+	border: 1px solid #ccc;
+}
+#myModify .myModify-content-two p {
+	margin: 0;
+}
+#myModify .myModify-content-two p:last-of-type {
+	margin-top: 50px;
+}
+#myModify .myModify-content-two label input {
+	margin: 0;
+	vertical-align: middle;
+}
+#myModify .myModify-content-two label span {
+	display: inline-block;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+}
+#myModify .myModify-content-three {
+	margin: 0 20px;
+	padding: 40px 60px;
+	height: 400px;
+	border: 1px solid #ccc;
+}
+#myModify .myModify-content-three .form-inline {
+	position: relative;
+	height: 320px;
+}
+#myModify .myModify-content-three .form-inline input,
+#myModify .myModify-content-three .form-inline select {
+	width: 150px;
+	border: 1px solid #ddd;
+}
+#myModify .myModify-content-three .form-inline input {
+	padding: 0 5px;
+}
+#myModify .myModify-content-three .form-inline>div.form-group {
+	float: left;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+#myModify .myModify-content-three .form-inline>div.three-box {
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 320px;
+	background: #f6f6f6;
+}
+#myModify .myModify-content-three .form-inline>div.three-box>p {
+	margin: 0;
+	position: absolute;
+	left: -19px;
+	top: 50%;
+	margin-top: -20px;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 20px solid #f6f6f6;
+	border-bottom: 20px solid transparent;
+}
+#myModify .myModify-content-three .three-show {
+	position: absolute;
+	top: 50%;
+	margin-top: -80px;
+	width: 100%;
+	text-align: center;
+}
+#myModify .myModify-content-three .three-show .form-group {
+	margin-bottom: 10px;
+}
+#myModify .myModify-content-three .three-hide {
+	display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 100%;
+	text-align: center;
+}
+#myModify .myModify-content-three .three-hide .form-group {
+	margin-bottom: 10px;
+}
+#myModify .myModify-content-three .form-group span {
+	display: inline-block;
+	width: 92px;
+	text-align: right;
+}
+#myModify .myModify-content-three .form-inline>.form-group>span {
+	width: 75px;
+}
+#myModify .myModify-content-three .form-inline .form-group label {
+	margin-bottom: 0;
+}
+/*退出修改模态框*/
+#mySignOut-mask {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	background-color: #000;
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+#mySignOut {
+	z-index: 1055;
+}
+#mySignOut .modal-dialog {
+	margin: 0;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -92.5px;
+	margin-left: -150px;
+	width: 400px;
+}
+#mySignOut .mySignOut-content {
+	margin: 0;
+	text-align: center;
+	height: 27px;
+	line-height: 27px;
+}
+#mySignOut .modal-header {
+	padding: 12px 15px;
+	border-bottom: 1px solid #ccc;
+	background: #ccc;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+#mySignOut .modal-body {
+	padding: 50px 15px;
+}
+#mySignOut .mySignOut-content span {
+	margin-right: 10px;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background: url(../images/ico-011.png) no-repeat center;
+	background-size: 27px 27px;
+	vertical-align: bottom;
+}
+#mySignOut .modal-footer {
+	border-top: 1px solid #ccc;
+}
+/*删除流程*/
+#myDelete .modal-dialog {
+	width: 400px;
+}
+#myDelete .modal-header {
+	padding: 12px 15px;
+	border-bottom: 1px solid #ccc;
+	background: #ccc;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+#myDelete .modal-body {
+	padding: 50px 15px;
+}
+#myDelete .myDelete-content {
+	margin: 0;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+}
+#myDelete .myDelete-content span {
+	margin-right: 10px;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background: url(../images/ico-011.png) no-repeat center;
+	background-size: 27px 27px;
+	vertical-align: bottom;
+}
+#myDelete .modal-footer {
+	border-top: 1px solid #ccc;
+}
+/*爬虫用户识别结果模态框*/
+#myResult .myResult-title span {
+	color: red;
+}
+#myResult table {
+	margin-bottom: 10px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#myResult table th,
+#myResult table td {
+	padding: 5px 0;
+	text-align: center;
+}
+#myResult .myResult-text {
+	margin: 0;
+	color: red;
+}
+
+/*登录页面*/
+.login {
+	position: relative;
+	height: 100%;
+}
+.login .login-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../images/login.jpg) no-repeat 100% 100%;
+	background-size: 100% 100%;
+	z-index: -10;
+}
+.login .login-box {
+	position: absolute;
+	top: 50%;
+	margin-top: -294.5px;
+	right: 12.34%;
+	width: 400px;
+	height: 589px;
+	background-color: #fff;
+	border-radius: 10px;
+	-moz-box-shadow:0 0 20px #213B88;
+	-webkit-box-shadow:0 0 20px #213B88;
+	box-shadow:0 0 20px #213B88;
+}
+.login .login-box .login-box-img {
+	margin-top: 74px;
+	text-align: center;
+	line-height: 0;
+}
+.login .login-box .login-box-text {
+	margin: 0;
+	margin-top: 40px;
+	font-size: 22px;
+	color: #333;
+	text-align: center;
+}
+.login .login-box form {
+	margin-top: 34px;
+}
+.login .login-box .login-name {
+	position: relative;
+	height: 66px;
+	line-height: 66px;
+	border-left: 4px solid transparent;
+	background-color: #fff;
+}
+.login .login-box .login-name img {
+	margin-left: 57px;
+	width: 17px;
+	height: 17px;
+}
+.login .login-box .login-name input {
+	padding-left: 10px;
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+	border-color: transparent;
+}
+.login .login-box .login-name input::-webkit-input-placeholder { /* WebKit browsers */
+	color:    #999;
+}
+.login .login-box .login-name input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    #999;
+}
+.login .login-box .login-name input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    #999;
+}
+.login .login-box .login-name input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:    #999;
+}
+.login .login-box .login-name span {
+	display: none;
+	position: absolute;
+	top: 26px;
+	right: 60px;
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+	background: url(../images/login_04.png) no-repeat 100% 100%;
+}
+.login .login-box .login-name.on {
+	border-left: 4px solid #1f33ac;
+	background-color: #eceff8;
+}
+.login .login-box .login-name.on input {
+	background-color: #eceff8;
+}
+.login .login-box .login-name.on span {
+	display: inline-block;
+}
+.login .login-box .login-password {
+	position: relative;
+	height: 66px;
+	line-height: 66px;
+	border-left: 4px solid transparent;
+	background-color: #fff;
+}
+.login .login-box .login-password img {
+	margin-left: 57px;
+	width: 17px;
+	height: 17px;
+}
+.login .login-box .login-password input {
+	padding-left: 10px;
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+	border-color: transparent;
+}
+.login .login-box .login-password input::-webkit-input-placeholder { /* WebKit browsers */
+	color:    #999;
+}
+.login .login-box .login-password input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    #999;
+}
+.login .login-box .login-password input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    #999;
+}
+.login .login-box .login-password input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:    #999;
+}
+.login .login-box .login-password span {
+	display: none; 
+	position: absolute;
+	top: 28px;
+	right: 60px;
+	width: 16px;
+	height: 10px;
+	cursor: pointer;
+	background: url(../images/login_05.png) no-repeat 100% 100%;
+}
+.login .login-box .login-password.on {
+	border-left: 4px solid #1f33ac;
+	background-color: #eceff8;
+}
+.login .login-box .login-password.on input {
+	background-color: #eceff8;
+}
+.login .login-box .login-password.on span {
+	display: inline-block;
+	cursor: pointer;
+}
+.login .login-title {
+	height: 43px;
+	font-size: 14px;
+	color: #e42534;
+	text-align: center;
+}
+.login .login-title p {
+	/* display: none; */
+	margin: 0;
+	height: 43px;
+	line-height: 43px;
+}
+.login .login-btn {
+	margin-top: 10px;
+	text-align: center;
+}
+.login .login-btn button.btn {
+	padding: 0;
+	width: 300px;
+	height: 56px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #0093d0;
+	border-radius: 30px;
+	outline: none !important;
+}
+
+/*提示弹出窗*/
+.prompt .modal-dialog {
+	width: 400px;
+}
+.prompt .modal-header {
+	padding: 12px 15px;
+	border-bottom: 1px solid #ccc;
+	background: #ccc;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+.prompt .modal-body {
+	padding: 50px 15px;
+}
+.prompt .myRun-content {
+	margin: 0;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+}
+.prompt .myRun-content span {
+	margin-right: 10px;
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background: url(../img/ico-011.png) no-repeat center;
+	background-size: 27px 27px;
+	vertical-align: bottom;
+}
+.prompt .modal-footer {
+	border-top: 1px solid #ccc;
+}

@@ -1,0 +1,34 @@
+.kp-title-container{
+	overflow:hidden;
+	padding:10px;
+	text-align: center;
+	color:#000;
+}
+
+.kp-title-container a{
+	text-decoration: none;
+	color:#000;
+}
+
+.kp-table{
+	border-collapse:collapse
+}
+
+.kp-table thead tr th{
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+.kp-table tbody tr{
+	height: 30px;
+}
+
+.kp-ordering{
+	margin-left: 10px;
+	display: inline-table;
+	font-size: 10px;
+	vertical-align:middle;
+}
+
+.kp-ordering span{
+	display: block;
+}

@@ -1,0 +1,6 @@
+body{margin:0;padding:0;text-align:center;font: 12px/1.5 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;  overflow-y:scroll; }
+.error-contain{margin:0 auto;margin-top:10%;}
+.error-img{width:415px;height:169px;margin:0 auto;background: url(../images/error.jpg )no-repeat;}
+.error-code{font-size: 60px;color:#2f77c3;}
+.error-msg{font-size: 22px;margin-bottom:20px;}
+.error-reload{font-size: 16px;background-color: #2f76c2;width:144px;height:33px;margin:0 auto;padding-top:6px;color:#ffffff;}

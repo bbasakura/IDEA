@@ -1,0 +1,101 @@
+.zzc {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #7C7B76;
+    opacity: .6;
+}
+
+.testConnect {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -108px;
+    margin-left: -200px;
+    z-index: 999;
+    width: 400px;
+    height: 216px;
+    background-color: #fff;
+}
+
+.testConnect .testConnect-header {
+    position: relative;
+    padding: 0 20px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+}
+
+.testConnect .testConnect-header i {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.testConnect .testConnect-centent {
+    height: 106px;
+    line-height: 106px;
+    text-align: center;
+}
+
+.testConnect .testConnect-footer {
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.testConnect .testConnect-footer span {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    background-color: #ff8a3c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.confrim-btn {
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    background-color: #ff8a3c;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.gray {
+    background-color: #dededd;
+}

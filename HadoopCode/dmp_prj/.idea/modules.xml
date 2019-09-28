@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dmp_impala/dmp_impala.iml" filepath="$PROJECT_DIR$/dmp_impala/dmp_impala.iml" />
       <module fileurl="file://$PROJECT_DIR$/dmp_prj.iml" filepath="$PROJECT_DIR$/dmp_prj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dmp_project/dmp_project.iml" filepath="$PROJECT_DIR$/dmp_project/dmp_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/dmp_spark/dmp_spark.iml" filepath="$PROJECT_DIR$/dmp_spark/dmp_spark.iml" />
     </modules>
   </component>
